@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" crossorigin src="/main.min2.js"></script>
-  <link rel="stylesheet" crossorigin href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
 </head>
 
 <body class="w-full color-style-5">
     <nav class="bg-colored flex justify-between items-center px-[16px] lg:px-[6%] xl:px-[8%] 2xl:px-[10%] h-24 w-full">
         <div class="nav-desktop-top overflow-hidden flex gap-5 h-16 justify-between items-center">
-            <img class="h-full object-center mr-4" src="/img/logo.png" alt="">
+            <img class="h-full object-center mr-4" src="./img/logo.png" alt="">
             <a class="hover-underline-slide shrink-0" href="">Головна</a>
             <a class="hover-underline-slide shrink-0" href="">Сайт громади</a>
             <a class="hover-underline-slide shrink-0" href="">Послуги</a>
@@ -67,7 +66,7 @@
                     </div>
                     <div class="flex flex-col sm:w-[47%] lg:w-[20%] lg:justify-end">
                         <a class="button-transparent mb-2" href="tel:">Гаряча лінія <img
-                                src="/img/material-design/tel.svg" alt=""></a>
+                                src="./img/material-design/tel.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -109,7 +108,7 @@
         </svg>
         <form class="p-8" action="">
             <div class="styled-input mb-8">
-                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='48px'%20viewBox='0%20-960%20960%20960'%20width='48px'%3e%3cpath%20fill='%23000'%20class='fill'%20d='M796-121%20533-384q-30%2026-69.96%2040.5Q423.08-329%20378-329q-108.16%200-183.08-75Q120-479%20120-585t75-181q75-75%20181.5-75t181%2075Q632-691%20632-584.85%20632-542%20618-502q-14%2040-42%2075l264%20262-44%2044ZM377-389q81.25%200%20138.13-57.5Q572-504%20572-585t-56.87-138.5Q458.25-781%20377-781q-82.08%200-139.54%2057.5Q180-666%20180-585t57.46%20138.5Q294.92-389%20377-389Z'/%3e%3c/svg%3e" alt="">
+                <img src="./img/material-design/search.svg" alt="">
                 <input id="main-search-form-text" name="text" type="text" autocomplete="off" required="">
                 <label class="input-label" for="main-search-form-text">
                     <span class="input-span">Введіть ваш пошуковий запит</span>
@@ -128,7 +127,7 @@
             </div>
             <div class="flex flex-[1] items-center justify-start md:justify-end mt-2 md:mt-0">
                 <div class="flex items-start gap-8">
-                    <img class="hidden lg:block max-w-[200px] max-h-full object-contain" src="/img/logo.png" alt="">
+                    <img class="hidden lg:block max-w-[200px] max-h-full object-contain" src="./img/logo.png" alt="">
                     <div class="flex gap-4 flex-wrap items-start">
                         <a class="block" href="https://facebook.com" target="_blank">
                             <svg width="48" height="48" viewBox="0 0 36 36" fill="none"
@@ -255,14 +254,14 @@
                 <p class="text-sm md:text-base">Надано послуг</p>
             </div>
             <!-- text-align center if icon (items-center class) -->
-            <a href="/cherga"
+            <a href="./cherga"
                 class="hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
-                <img class="py-3" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='48px'%20viewBox='0%20-960%20960%20960'%20width='48px'%20class='fill'%20fill='%23000'%3e%3cpath%20d='M120-510v-330h330v330H120Zm60-60h210v-210H180v210Zm-60%20450v-330h330v330H120Zm60-60h210v-210H180v210Zm330-330v-330h330v330H510Zm60-60h210v-210H570v210Zm188%20450v-82h82v82h-82ZM510-367v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm-82%2083v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm83-82v-83h83v83h-83Zm0-165v-83h83v83h-83Zm83%2082v-82h82v82h-82Z'/%3e%3c/svg%3e" alt="">
+                <img class="py-3" src="./img/material-design/qr.svg" alt="">
                 <p class="text-sm md:text-base">Записатися в чергу</p>
             </a>
-            <a href="/cherga"
+            <a href="./cherga"
                 class="hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
-                <img class="py-3" src="data:image/svg+xml,%3csvg%20width='53'%20height='53'%20viewBox='0%200%2053%2053'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20class='fill'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.8321%2011.9246V15.0255L12.1329%2015.3269C10.862%2015.4292%209.66209%2015.9546%208.72504%2016.8192C7.788%2017.6838%207.16791%2018.8377%206.96391%2020.0962C6.87365%2020.6596%206.79067%2021.2238%206.71497%2021.7886C6.69797%2021.9253%206.72449%2022.0638%206.79074%2022.1846C6.85699%2022.3053%206.95961%2022.4021%207.08402%2022.4612L7.25217%2022.5398C19.1077%2028.1521%2033.3043%2028.1521%2045.1577%2022.5398L45.3258%2022.4612C45.4499%2022.4018%2045.552%2022.3049%2045.6179%2022.1841C45.6837%2022.0634%2045.7099%2021.925%2045.6927%2021.7886C45.6186%2021.2233%2045.5364%2020.6591%2045.446%2020.0962C45.242%2018.8377%2044.6219%2017.6838%2043.6848%2016.8192C42.7478%2015.9546%2041.5479%2015.4292%2040.277%2015.3269L36.5777%2015.0277V11.9268C36.578%2011.0115%2036.2497%2010.1265%2035.6525%209.43278C35.0554%208.73907%2034.2291%208.28272%2033.324%208.14673L30.6598%207.74711C27.7063%207.30565%2024.7036%207.30565%2021.7501%207.74711L19.0859%208.14673C18.1811%208.28267%2017.3551%208.7387%2016.7581%209.43196C16.161%2010.1252%2015.8324%2011.0097%2015.8321%2011.9246ZM30.1728%2010.9856C27.5422%2010.5927%2024.8677%2010.5927%2022.2371%2010.9856L19.5729%2011.3852C19.4436%2011.4046%2019.3256%2011.4697%2019.2402%2011.5686C19.1549%2011.6676%2019.1079%2011.7939%2019.1077%2011.9246V14.7963C23.8354%2014.5263%2028.5745%2014.5263%2033.3021%2014.7963V11.9246C33.302%2011.7939%2033.255%2011.6676%2033.1696%2011.5686C33.0843%2011.4697%2032.9662%2011.4046%2032.837%2011.3852L30.1728%2010.9856Z'%20fill='black'/%3e%3cpath%20class='fill'%20d='M46.1161%2026.3573C46.1118%2026.2867%2046.0904%2026.2182%2046.0537%2026.1577C46.0171%2026.0972%2045.9663%2026.0465%2045.9057%2026.01C45.8451%2025.9735%2045.7766%2025.9522%2045.706%2025.948C45.6354%2025.9439%2045.5648%2025.9569%2045.5003%2025.986C33.3347%2031.3733%2019.0748%2031.3733%206.90909%2025.986C6.84463%2025.9569%206.77407%2025.9439%206.70345%2025.948C6.63284%2025.9522%206.5643%2025.9735%206.50372%2026.01C6.44314%2026.0465%206.39234%2026.0972%206.35568%2026.1577C6.31902%2026.2182%206.29761%2026.2867%206.29327%2026.3573C6.0721%2030.538%206.29684%2034.7305%206.96369%2038.8636C7.16723%2040.1226%207.78713%2041.2769%208.72422%2042.1419C9.6613%2043.007%2010.8614%2043.5327%2012.1326%2043.6351L16.2206%2043.9627C22.8658%2044.4999%2029.5415%2044.4999%2036.1888%2043.9627L40.2768%2043.6351C41.548%2043.5327%2042.7481%2043.007%2043.6852%2042.1419C44.6223%2041.2769%2045.2422%2040.1226%2045.4457%2038.8636C46.114%2034.7254%2046.3411%2030.5326%2046.1161%2026.3595'%20fill='black'/%3e%3c/svg%3e" alt="">
+                <img class="py-3" src="./img/material-design/briefcase.svg" alt="">
                 <p class="text-sm md:text-base">Електронна валіза</p>
             </a>
         </div>
@@ -275,7 +274,7 @@
             </div>
             <div class="flex flex-col lg:flex-row gap-2 justify-between">
                 <div class="bg-colored flex flex-col lg:flex-row flex-[2] rounded-4xl overflow-hidden">
-                    <img class="w-full h-[320px] lg:h-[380px] object-cover flex-[1]" src="/img/sample-1.jpg" alt="">
+                    <img class="w-full h-[320px] lg:h-[380px] object-cover flex-[1]" src="./img/sample-1.jpg" alt="">
                     <a href="" class="relative hover:bg-colored flex-[1] p-4">
                         <div class="flex justify-between mb-2">
                             <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Важливе</p>
@@ -287,7 +286,7 @@
                         <p class="text-regular max-h-[144px] overflow-hidden mb-5 lg:mb-0">Військові та ветерани окрім
                             зубопротезування можуть безоплатно отримати послуги із лікування зубів в межах пілотного
                             проєкту “Зубопротезування окремих категорій осіб, які захищали незалежність</p>
-                        <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                        <img class="absolute bottom-4 right-4" src="./img/material-design/arrow.svg" alt="">
                     </a>
                 </div>
                 <a href="" class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] p-4">
@@ -298,7 +297,7 @@
                     <h3 class="text-big mb-3 max-h-[96px] overflow-hidden">До уваги жителів громади!</h3>
                     <p class="text-regular max-h-[144px] overflow-hidden mb-5 lg:mb-0">Актуалізуйте дані у Реєстрі
                         Луцької міської територіальної громади</p>
-                    <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4" src="./img/material-design/arrow.svg" alt="">
                 </a>
             </div>
         </section>
@@ -316,7 +315,7 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
                     <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
@@ -326,7 +325,7 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
                     <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
@@ -336,7 +335,7 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
                     <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
@@ -346,7 +345,7 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
                     <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
@@ -356,7 +355,7 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
                     <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
@@ -366,7 +365,7 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
                     <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
@@ -376,12 +375,12 @@
                         дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
                         ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
                         проживання.</p>
-                    <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4 w-10 h-10" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <div
                     class="bg-colored flex flex-col justify-between rounded-3xl col-start-1 md:col-start-2 lg:col-start-3 md:row-start-2 row-span-2 p-10">
                     <h3 class="text-big">Записатись до електронної черги</h3>
-                    <img class="w-2/3 h-auto my-2" src="/img/register.svg" alt="">
+                    <img class="w-2/3 h-auto my-2" src="./img/register.svg" alt="">
                     <a class="button-black w-full text-center" href="">Записатися</a>
                 </div>
             </div>
@@ -394,25 +393,25 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
                 <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/yemalyatko"
                     target="_blank">
-                    <img class="w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-1.png"
+                    <img class="w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-1.png"
                         alt="Зображення до послуги 'Ємалятко'">
                     <p class="text-medium w-full py-4 border-b-2">Ємалятко</p>
                 </a>
                 <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/dovidka-pro-dohodi"
                     target="_blank">
-                    <img class="hidden md:block w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-2.jpg"
+                    <img class="hidden md:block w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-2.jpg"
                         alt="Зображення до послуги 'Довідка про доходи'">
                     <p class="text-medium w-full py-4 border-b-2">Довідка про доходи</p>
                 </a>
                 <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/reyestraciya-fop"
                     target="_blank">
-                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-3.png"
+                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-3.png"
                         alt="Зображення до послуги 'Реєстрація ФОП'">
                     <p class="text-medium w-full py-4 border-b-2">Реєстрація ФОП</p>
                 </a>
                 <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/poshkodzhene-majno"
                     target="_blank">
-                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-4.jpg"
+                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-4.jpg"
                         alt="Зображення до послуги 'Пошкоджене майно'">
                     <p class="text-medium w-full py-4 border-b-2">Пошкоджене майно</p>
                 </a>
@@ -429,7 +428,7 @@
                 <div class="flex-1">
                     <h2 class="text-biggest mb-12">Директор департаменту</h2>
                     <div class="flex gap-4 justify-between">
-                        <img class="w-full flex-1 aspect-square object-cover rounded-2xl" src="/img/photo-1.jpg" alt="">
+                        <img class="w-full flex-1 aspect-square object-cover rounded-2xl" src="./img/photo-1.jpg" alt="">
                         <div class="flex flex-col justify-between flex-1">
                             <h3 class="text-big mb-6">Наталія Середюк</h3>
                             <p class="text-regular mb-4">69105, Запоріжжя, проспект Соборний, 206</p>
@@ -441,14 +440,14 @@
                 </div>
                 <div class="flex flex-1">
                     <div class="grid grid-cols-2 gap-2">
-                        <a href="/cherga"
+                        <a href="./cherga"
                             class="bg-colored hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
-                            <img class="py-3" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='48px'%20viewBox='0%20-960%20960%20960'%20width='48px'%20class='fill'%20fill='%23000'%3e%3cpath%20d='M120-510v-330h330v330H120Zm60-60h210v-210H180v210Zm-60%20450v-330h330v330H120Zm60-60h210v-210H180v210Zm330-330v-330h330v330H510Zm60-60h210v-210H570v210Zm188%20450v-82h82v82h-82ZM510-367v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm-82%2083v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm83-82v-83h83v83h-83Zm0-165v-83h83v83h-83Zm83%2082v-82h82v82h-82Z'/%3e%3c/svg%3e" alt="">
+                            <img class="py-3" src="./img/material-design/qr.svg" alt="">
                             <p class="text-sm md:text-base">Записатися в чергу</p>
                         </a>
-                        <a href="/cherga"
+                        <a href="./cherga"
                             class="bg-colored hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
-                            <img class="py-3" src="data:image/svg+xml,%3csvg%20width='53'%20height='53'%20viewBox='0%200%2053%2053'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20class='fill'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.8321%2011.9246V15.0255L12.1329%2015.3269C10.862%2015.4292%209.66209%2015.9546%208.72504%2016.8192C7.788%2017.6838%207.16791%2018.8377%206.96391%2020.0962C6.87365%2020.6596%206.79067%2021.2238%206.71497%2021.7886C6.69797%2021.9253%206.72449%2022.0638%206.79074%2022.1846C6.85699%2022.3053%206.95961%2022.4021%207.08402%2022.4612L7.25217%2022.5398C19.1077%2028.1521%2033.3043%2028.1521%2045.1577%2022.5398L45.3258%2022.4612C45.4499%2022.4018%2045.552%2022.3049%2045.6179%2022.1841C45.6837%2022.0634%2045.7099%2021.925%2045.6927%2021.7886C45.6186%2021.2233%2045.5364%2020.6591%2045.446%2020.0962C45.242%2018.8377%2044.6219%2017.6838%2043.6848%2016.8192C42.7478%2015.9546%2041.5479%2015.4292%2040.277%2015.3269L36.5777%2015.0277V11.9268C36.578%2011.0115%2036.2497%2010.1265%2035.6525%209.43278C35.0554%208.73907%2034.2291%208.28272%2033.324%208.14673L30.6598%207.74711C27.7063%207.30565%2024.7036%207.30565%2021.7501%207.74711L19.0859%208.14673C18.1811%208.28267%2017.3551%208.7387%2016.7581%209.43196C16.161%2010.1252%2015.8324%2011.0097%2015.8321%2011.9246ZM30.1728%2010.9856C27.5422%2010.5927%2024.8677%2010.5927%2022.2371%2010.9856L19.5729%2011.3852C19.4436%2011.4046%2019.3256%2011.4697%2019.2402%2011.5686C19.1549%2011.6676%2019.1079%2011.7939%2019.1077%2011.9246V14.7963C23.8354%2014.5263%2028.5745%2014.5263%2033.3021%2014.7963V11.9246C33.302%2011.7939%2033.255%2011.6676%2033.1696%2011.5686C33.0843%2011.4697%2032.9662%2011.4046%2032.837%2011.3852L30.1728%2010.9856Z'%20fill='black'/%3e%3cpath%20class='fill'%20d='M46.1161%2026.3573C46.1118%2026.2867%2046.0904%2026.2182%2046.0537%2026.1577C46.0171%2026.0972%2045.9663%2026.0465%2045.9057%2026.01C45.8451%2025.9735%2045.7766%2025.9522%2045.706%2025.948C45.6354%2025.9439%2045.5648%2025.9569%2045.5003%2025.986C33.3347%2031.3733%2019.0748%2031.3733%206.90909%2025.986C6.84463%2025.9569%206.77407%2025.9439%206.70345%2025.948C6.63284%2025.9522%206.5643%2025.9735%206.50372%2026.01C6.44314%2026.0465%206.39234%2026.0972%206.35568%2026.1577C6.31902%2026.2182%206.29761%2026.2867%206.29327%2026.3573C6.0721%2030.538%206.29684%2034.7305%206.96369%2038.8636C7.16723%2040.1226%207.78713%2041.2769%208.72422%2042.1419C9.6613%2043.007%2010.8614%2043.5327%2012.1326%2043.6351L16.2206%2043.9627C22.8658%2044.4999%2029.5415%2044.4999%2036.1888%2043.9627L40.2768%2043.6351C41.548%2043.5327%2042.7481%2043.007%2043.6852%2042.1419C44.6223%2041.2769%2045.2422%2040.1226%2045.4457%2038.8636C46.114%2034.7254%2046.3411%2030.5326%2046.1161%2026.3595'%20fill='black'/%3e%3c/svg%3e" alt="">
+                            <img class="py-3" src="./img/material-design/briefcase.svg" alt="">
                             <p class="text-sm md:text-base">Електронна валіза</p>
                         </a>
                     </div>
@@ -464,7 +463,7 @@
                 class="flex gap-4 justify-start overflow-x-auto snap-x scroll-smooth scrollbar-hide">
                 <a href=""
                     class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-xs overflow-hidden snap-start">
-                    <img class="w-full aspect-video object-cover mb-2" src="/img/sample-2.jpg" alt="">
+                    <img class="w-full aspect-video object-cover mb-2" src="./img/sample-2.jpg" alt="">
                     <div class="flex flex-wrap px-4 my-4 gap-2">
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Новини</p>
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Соціальний захист</p>
@@ -475,11 +474,11 @@
                     <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції
                         Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю
                         Дніпровської ГЕС буде...</p>
-                    <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a href=""
                     class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-xs overflow-hidden snap-start">
-                    <img class="w-full aspect-video object-cover mb-2" src="/img/sample-3.jpg" alt="">
+                    <img class="w-full aspect-video object-cover mb-2" src="./img/sample-3.jpg" alt="">
                     <div class="flex flex-wrap px-4 my-4 gap-2">
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Новини</p>
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Соціальний захист</p>
@@ -490,11 +489,11 @@
                     <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції
                         Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю
                         Дніпровської ГЕС буде...</p>
-                    <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4" src="./img/material-design/arrow.svg" alt="">
                 </a>
                 <a href=""
                     class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-xs overflow-hidden snap-start">
-                    <img class="w-full aspect-video object-cover mb-2" src="/img/sample-2.jpg" alt="">
+                    <img class="w-full aspect-video object-cover mb-2" src="./img/sample-2.jpg" alt="">
                     <div class="flex flex-wrap px-4 my-4 gap-2">
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Новини</p>
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Соціальний захист</p>
@@ -505,7 +504,7 @@
                     <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції
                         Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю
                         Дніпровської ГЕС буде...</p>
-                    <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
+                    <img class="absolute bottom-4 right-4" src="./img/material-design/arrow.svg" alt="">
                 </a>
             </div>
             <div class="slider-control-dots flex lg:hidden w-full justify-center gap-1 mt-3"
@@ -531,56 +530,66 @@
                             d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
                     </svg>
                 </div>
-            </div>
+            </div>
+            <script type="module">
+                import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';
+                const lightbox = new PhotoSwipeLightbox({
+                    gallery: '#galleryContainer',
+                    children: 'a',
+                    pswpModule: () => import('/js/photoswipe.esm.min.js')
+                });
+                lightbox.init();
+            </script>
+            <link rel="stylesheet" href="./src/photoswipe.css">
             <div id="galleryContainer"
                 class="grid grid-rows-1 md:grid-rows-2 grid-flow-col auto-cols-[calc(50%)] lg:auto-cols-[calc(33.333%)] gap-4 overflow-x-auto scroll-smooth snap-x scrollbar-hide pr-1">
-                <a class="snap-start" href="/img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/cabinet-1.png"
+                <a class="snap-start" href="./img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/cabinet-1.png"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-101 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/cabinet-2.jpg" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/cabinet-2.jpg"
+                <a class="snap-start" href="./img/cabinet-2.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/cabinet-2.jpg"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/cabinet-3.png" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/cabinet-3.png"
+                <a class="snap-start" href="./img/cabinet-3.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/cabinet-3.png"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/cabinet-4.jpg" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/cabinet-4.jpg"
+                <a class="snap-start" href="./img/cabinet-4.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/cabinet-4.jpg"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/sample-1.jpg" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/sample-1.jpg"
+                <a class="snap-start" href="./img/sample-1.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/sample-1.jpg"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/sample-2.jpg" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/sample-2.jpg"
+                <a class="snap-start" href="./img/sample-2.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/sample-2.jpg"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/cabinet-1.png"
+                <a class="snap-start" href="./img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/cabinet-1.png"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/cabinet-2.jpg" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/cabinet-2.jpg"
+                <a class="snap-start" href="./img/cabinet-2.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/cabinet-2.jpg"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/sample-3.jpg" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/sample-3.jpg"
+                <a class="snap-start" href="./img/sample-3.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/sample-3.jpg"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
-                <a class="snap-start" href="/img/logo.png" data-pswp-width="1280" data-pswp-height="720">
-                    <img src="/img/logo.png"
+                <a class="snap-start" href="./img/logo.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="./img/logo.png"
                         class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
                         alt="">
                 </a>
@@ -634,7 +643,7 @@
         <div class="flex flex-col md:flex-row py-8 gap-2 border-b-2">
             <div class="flex flex-col lg:flex-row flex-[3] items-center gap-4">
                 <div class="flex flex-1 gap-6 items-center">
-                    <img class="w-20 h-auto" src="/img/logo.png" alt="">
+                    <img class="w-20 h-auto" src="./img/logo.png" alt="">
                     <h3 class="text-big">Центр надання адміністративних послуг</h3>
                 </div>
                 <div class="flex-1">
@@ -643,12 +652,12 @@
                         Фондом Східна Європа у партнерстві з Міністерством цифрової трансформації України та
                         фінансується Швейцарією.</p>
                     <div class="flex items-center gap-4 mb-4">
-                        <img class="w-12 h-12" src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M44.0617%2010.7075C40.0457%204.67298%2033.5324%200.812917%2026.2766%200.121815C18.8352%20-0.586143%2011.8325%201.97599%206.82097%207.21825C3.76679%2010.4209%201.75879%2013.9776%200.594494%2018.3433C0.071402%2020.2649%200.00390625%2020.9897%200.00390625%2024.0744C0.00390625%2027.1591%200.0882759%2027.9007%200.611368%2029.8898C2.9231%2038.5875%209.70642%2045.2626%2018.464%2047.437C19.2233%2047.6224%2020.1514%2047.8247%2020.5226%2047.8753C22.1931%2048.1113%2026.226%2048.0101%2028.0146%2047.6899C35.4054%2046.4088%2041.9862%2041.6385%2045.361%2035.1152C49.3095%2027.4962%2048.7864%2017.8208%2044.0617%2010.7075ZM43.083%2029.1144C41.1425%2036.2783%2035.2704%2041.7396%2027.8459%2043.2567C16.2704%2045.6503%204.98172%2036.9019%204.27301%2024.9846C3.80054%2017.2814%208.47462%209.56126%2015.646%206.17317C18.3627%204.89211%2020.5395%204.42013%2023.8468%204.40328C27.0191%204.38642%2028.7908%204.72354%2031.5582%205.83605C37.1265%208.06106%2041.4969%2013.101%2043.0999%2019.1693C43.7749%2021.6977%2043.758%2026.586%2043.083%2029.1144Z'%20fill='black'/%3e%3cpath%20d='M14.5662%2031.0011C12.3725%2030.2257%2010.702%2027.9501%2010.3983%2025.3543C9.95957%2021.5111%2011.4107%2018.5275%2014.3637%2017.179C15.9667%2016.4542%2018.869%2016.4711%2020.5901%2017.2127C21.6363%2017.6679%2023.6106%2019.4378%2023.6106%2019.9434C23.6106%2020.0277%2022.9356%2020.4323%2022.0919%2020.8368L20.5733%2021.5785L19.7633%2020.7694C19.3077%2020.3143%2018.6328%2019.8929%2018.2109%2019.8255C17.1647%2019.6232%2015.9329%2020.0951%2015.3592%2020.8874C14.4312%2022.1853%2014.3637%2025.6071%2015.2411%2026.9556C15.6967%2027.6467%2016.4729%2028.1355%2017.1816%2028.203C18.7003%2028.3209%2019.0884%2028.1861%2019.9827%2027.2422L20.8939%2026.2814L22.0582%2026.9219C22.6994%2027.2759%2023.3237%2027.6467%2023.4418%2027.7478C23.8299%2028.1018%2022.0244%2029.956%2020.5733%2030.6808C19.3415%2031.3045%2018.9534%2031.3888%2017.3166%2031.3719C16.3379%2031.3382%2015.0724%2031.1865%2014.5662%2031.0011ZM28.4871%2031.0011C26.3273%2030.2425%2024.6736%2028.0344%2024.3193%2025.4385C23.8131%2021.6796%2025.3148%2018.5275%2028.2847%2017.179C30.0058%2016.4037%2032.925%2016.4542%2034.663%2017.3139C35.7429%2017.8364%2037.5484%2019.4883%2037.5484%2019.9603C37.5484%2020.0446%2036.8397%2020.4491%2035.9792%2020.8537L34.4099%2021.6122L33.5999%2020.7188C32.8744%2019.9266%2032.6719%2019.8255%2031.6763%2019.8255C30.2927%2019.8255%2029.4152%2020.3648%2028.9427%2021.4942C28.5209%2022.5056%2028.4534%2024.9834%2028.8415%2026.1296C29.6177%2028.4221%2032.4525%2028.9783%2034.0555%2027.141L34.7811%2026.3151L36.1648%2027.023C36.9241%2027.4107%2037.5484%2027.7816%2037.5484%2027.8658C37.5484%2028.3884%2035.7429%2030.0571%2034.5449%2030.6639C33.3131%2031.2876%2032.925%2031.3719%2031.2882%2031.3551C30.2589%2031.3382%2029.0102%2031.1865%2028.4871%2031.0011Z'%20fill='black'/%3e%3c/svg%3e" alt="copyright">
+                        <img class="w-12 h-12" src="./img/cc.svg" alt="copyright">
                         <p class="text-small font-normal">Весь контент доступний за ліцензією Creative Commons
                             Attribution 4.0 International license, якщо не зазначено інше.</p>
                     </div>
                     <div class="flex items-center gap-4 mb-4">
-                        <img class="w-12 h-12" src="/img/svoi.png" alt="svoi-logo">
+                        <img class="w-12 h-12" src="./img/svoi.png" alt="svoi-logo">
                         <a href="https://toolkit.in.ua" target="_blank" class="text-small font-normal underline">Хочете
                             такий сайт з чат-ботом для громади?</a>
                     </div>
@@ -758,11 +767,11 @@
                 <h3 class="text-medium text-center mb-4">Наша громада у смартфоні:</h3>
                 <div class="flex gap-4">
                     <a href="viber-link" target="_blank" class="hover:text-colored flex flex-col gap-2">
-                        <img class="w-20 h-20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1qAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFbElEQVR4nO3dzW7cNhhA0dro+z+y0UWyKDANILD8m7nnrO2RYt8IMEF9/Pr5+fkLGr5P3wDsI3dC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkT8vfcj/v+Pvn/58lEtNc7XDdH7clP4/Xqs36GTz557Ce209zfjqc7IXInRO6EyJ0QuRMyeWXm1dl1j7FVhbEVlbGvmbV6M3Y/sz5nltWrQJ7uhMidELkTIndC5E7I8pWZV2N/fY+tBjxZi5i1DvNklWPdjp3brv7E/lMfPd0JkTshcidE7oTInZADKzM77Xyf6LZdK2N7ivavluzk6U6I3AmROyFyJ0TuhHz4ysy6vS6z7mfdG08798y8C093QuROiNwJkTshcifkwMrMztWAWWsR69Zqxq7+xM51mHdZ4fF0J0TuhMidELkTIndClq/MnD3ZZ5ZZU1x2fs0T73ha0//xrvcNA+ROiNwJkTshcifk6112O5w1a0rw2LV2vl312TzdCZE7IXInRO6EyJ2QyXtm1u2m2Pk+0axZvmPXmrVDZt133bbz5zlPd0LkTojcCZE7IXInZPKemXVnId1/bvUsZyfYfPbJ2p7uhMidELkTIndC5E7I8jkzt81IGfvkVztPfdp5rvcTs076tmcGFpI7IXInRO6EyJ2QySsz6945Wjerdt06zJOv2Xle0rqTqp64YW7w+TuAbeROiNwJkTshcidk+dtMZyeijH3Xul09T6xbq1l3P7N2/tgzA9PInRC5EyJ3QuROyIGzmdadK7RzreaJsydQv8tU3p1X93QnRO6EyJ0QuRMid0IOnM10drVkzNjVZ81jGftk6zD/ccWlnw5XkTshcidE7oTInZDle2bOvqn0at17SZ965tRn/Ct+f/7Ez4LLyZ0QuRMid0LkTsgVbzOtO5vp7LXGnF3lWHee1A083QmROyFyJ0TuhMidkOUTgMd8xsTdJ26bMzPLzr1Sz3m6EyJ3QuROiNwJkTshy0/NfmLn2dZjnzx2rZ33PDbB5uwOGXNmYCG5EyJ3QuROiNwJWT4BeN3OjZ17Xc6esvTErKuP/QZvm9j8J+fvALaROyFyJ0TuhMidkMkrM2PG/ma/bdrJ2Qk2t5279MrbTLCV3AmROyFyJ0TuhCxfmTk7b2TduUJPnL3ns+8u3bYu9IunOyFyJ0TuhMidELkTsnxlZta6x85pMK/fNbaCcXZXz9l5v2PfZc4MTCN3QuROiNwJkTshB95mum3FYN0s33X/0nVTZV7N2nuzcwbRn3i6EyJ3QuROiNwJkTshV8yZGbPzfKJZn7NuF826ibvrdgfZMwMLyZ0QuRMid0LkTsjXDdM/1rltSvCsqTuvzp5bve5sJntmYJDcCZE7IXInRO6ELD81e6d1E3fHrnX2fPCd52jPYs8MTCN3QuROiNwJkTshV0wAHrNzRsq6OcbrJs+c3bVy5/tNnu6EyJ0QuRMid0LkTsgVE4CfOLtv5IlZ5zfNmk4za07vmDvfkvN0J0TuhMidELkTIndC3ngC8Cw7d5usOx9858nj6+5wtfN3ANvInRC5EyJ3QuROSG5lZufJRzsn2IyZddr1q9tmL//i6U6I3AmROyFyJ0TuhBxYmTn7nsvOdYZZ19o5N/i2s5nmOn8HsI3cCZE7IXInRO6ELF+ZueHv8X+btX5ydh1m576aWVffP+/31V0twlJyJ0TuhMidELkT8nXnpFZYwdOdELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidkH8ADHb721ZQOc8AAAAASUVORK5CYII=" alt="">
+                        <img class="w-20 h-20" src="./img/qr-sample.png" alt="">
                         <p class="text-regular">Viber</p>
                     </a>
                     <a href="telegram-link" target="_blank" class="hover:text-colored flex flex-col gap-2">
-                        <img class="w-20 h-20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1qAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFbElEQVR4nO3dzW7cNhhA0dro+z+y0UWyKDANILD8m7nnrO2RYt8IMEF9/Pr5+fkLGr5P3wDsI3dC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkT8vfcj/v+Pvn/58lEtNc7XDdH7clP4/Xqs36GTz557Ce209zfjqc7IXInRO6EyJ0QuRMyeWXm1dl1j7FVhbEVlbGvmbV6M3Y/sz5nltWrQJ7uhMidELkTIndC5E7I8pWZV2N/fY+tBjxZi5i1DvNklWPdjp3brv7E/lMfPd0JkTshcidE7oTInZADKzM77Xyf6LZdK2N7ivavluzk6U6I3AmROyFyJ0TuhHz4ysy6vS6z7mfdG08798y8C093QuROiNwJkTshcifkwMrMztWAWWsR69Zqxq7+xM51mHdZ4fF0J0TuhMidELkTIndClq/MnD3ZZ5ZZU1x2fs0T73ha0//xrvcNA+ROiNwJkTshcifk6112O5w1a0rw2LV2vl312TzdCZE7IXInRO6EyJ2QyXtm1u2m2Pk+0axZvmPXmrVDZt133bbz5zlPd0LkTojcCZE7IXInZPKemXVnId1/bvUsZyfYfPbJ2p7uhMidELkTIndC5E7I8jkzt81IGfvkVztPfdp5rvcTs076tmcGFpI7IXInRO6EyJ2QySsz6945Wjerdt06zJOv2Xle0rqTqp64YW7w+TuAbeROiNwJkTshcidk+dtMZyeijH3Xul09T6xbq1l3P7N2/tgzA9PInRC5EyJ3QuROyIGzmdadK7RzreaJsydQv8tU3p1X93QnRO6EyJ0QuRMid0IOnM10drVkzNjVZ81jGftk6zD/ccWlnw5XkTshcidE7oTInZDle2bOvqn0at17SZ965tRn/Ct+f/7Ez4LLyZ0QuRMid0LkTsgVbzOtO5vp7LXGnF3lWHee1A083QmROyFyJ0TuhMidkOUTgMd8xsTdJ26bMzPLzr1Sz3m6EyJ3QuROiNwJkTshy0/NfmLn2dZjnzx2rZ33PDbB5uwOGXNmYCG5EyJ3QuROiNwJWT4BeN3OjZ17Xc6esvTErKuP/QZvm9j8J+fvALaROyFyJ0TuhMidkMkrM2PG/ma/bdrJ2Qk2t5279MrbTLCV3AmROyFyJ0TuhCxfmTk7b2TduUJPnL3ns+8u3bYu9IunOyFyJ0TuhMidELkTsnxlZta6x85pMK/fNbaCcXZXz9l5v2PfZc4MTCN3QuROiNwJkTshB95mum3FYN0s33X/0nVTZV7N2nuzcwbRn3i6EyJ3QuROiNwJkTshV8yZGbPzfKJZn7NuF826ibvrdgfZMwMLyZ0QuRMid0LkTsjXDdM/1rltSvCsqTuvzp5bve5sJntmYJDcCZE7IXInRO6ELD81e6d1E3fHrnX2fPCd52jPYs8MTCN3QuROiNwJkTshV0wAHrNzRsq6OcbrJs+c3bVy5/tNnu6EyJ0QuRMid0LkTsgVE4CfOLtv5IlZ5zfNmk4za07vmDvfkvN0J0TuhMidELkTIndC3ngC8Cw7d5usOx9858nj6+5wtfN3ANvInRC5EyJ3QuROSG5lZufJRzsn2IyZddr1q9tmL//i6U6I3AmROyFyJ0TuhBxYmTn7nsvOdYZZ19o5N/i2s5nmOn8HsI3cCZE7IXInRO6ELF+ZueHv8X+btX5ydh1m576aWVffP+/31V0twlJyJ0TuhMidELkT8nXnpFZYwdOdELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidkH8ADHb721ZQOc8AAAAASUVORK5CYII=" alt="">
+                        <img class="w-20 h-20" src="./img/qr-sample.png" alt="">
                         <p class="text-regular">Telegram</p>
                     </a>
                 </div>
@@ -772,6 +781,7 @@
             <p class="text-small font-normal copyright-year">toolkit.in.ua 2025. Всі права захищені.</p>
         </div>
     </footer>
-</body>
+</body>
+<script type="module" src="./js/main.js"></script>
 
 </html>
