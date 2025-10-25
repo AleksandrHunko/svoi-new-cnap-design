@@ -3,27 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script src="./main.min3.js"></script>
-  <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" crossorigin src="/main.min2.js"></script>
+  <link rel="stylesheet" crossorigin href="/style.css">
 </head>
 
-<body class="w-full color-style-3">
+<body class="w-full color-style-5">
     <nav class="bg-colored flex justify-between items-center px-[16px] lg:px-[6%] xl:px-[8%] 2xl:px-[10%] h-24 w-full">
         <div class="nav-desktop-top overflow-hidden flex gap-5 h-16 justify-between items-center">
-            <img class="h-full object-center mr-4" src="./img/logo.png" alt="">
-            <a class="hover-underline-slide flex-shrink-0" href="">Головна</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Сайт громади</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Послуги</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Документи</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Новини</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Мобільна валіза</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Е-Черга</a>
-            <a class="hover-underline-slide flex-shrink-0" href="">Контакти</a>
+            <img class="h-full object-center mr-4" src="/img/logo.png" alt="">
+            <a class="hover-underline-slide shrink-0" href="">Головна</a>
+            <a class="hover-underline-slide shrink-0" href="">Сайт громади</a>
+            <a class="hover-underline-slide shrink-0" href="">Послуги</a>
+            <a class="hover-underline-slide shrink-0" href="">Документи</a>
+            <a class="hover-underline-slide shrink-0" href="">Новини</a>
+            <a class="hover-underline-slide shrink-0" href="">Мобільна валіза</a>
+            <a class="hover-underline-slide shrink-0" href="">Е-Черга</a>
+            <a class="hover-underline-slide shrink-0" href="">Контакти</a>
         </div>
         <div class="flex gap-4 h-16 justify-between items-center">
-            <svg id="search-button-open" class="h-9 w-9 cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"><path fill="#000" class="fill" d="M796-121 533-384q-30 26-69.96 40.5Q423.08-329 378-329q-108.16 0-183.08-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.13-57.5Q572-504 572-585t-56.87-138.5Q458.25-781 377-781q-82.08 0-139.54 57.5Q180-666 180-585t57.46 138.5Q294.92-389 377-389Z"./></svg>
+            <svg id="search-button-open" class="h-9 w-9 cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="48px"
+                viewBox="0 -960 960 960" width="48px">
+                <path fill="#000" class="fill"
+                    d="M796-121 533-384q-30 26-69.96 40.5Q423.08-329 378-329q-108.16 0-183.08-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l264 262-44 44ZM377-389q81.25 0 138.13-57.5Q572-504 572-585t-56.87-138.5Q458.25-781 377-781q-82.08 0-139.54 57.5Q180-666 180-585t57.46 138.5Q294.92-389 377-389Z" />
+            </svg>
             <svg id="accessibility-button-open" class="h-9 w-9 cursor-pointer" version="1.1"
                 viewBox="0 0 64.114716 64.114716" height="64.114716mm" width="64.114716mm"
                 xmlns:svg="http://www.w3.org/2000/svg">
@@ -33,72 +36,87 @@
                     style="fill:none;stroke-width:2.64583" stroke="#000" />
                 <path class="stroke" style="fill:none;stroke-width:2.64583"
                     d="m 62.791797,47.238028 v 15.55377 H 47.238033" stroke="#000" />
-                <path class="stroke" d="M 16.876685,62.791798 H 1.322915 v -15.55377"
-                stroke="#000" style="fill:none;stroke-width:2.64583" />
+                <path class="stroke" d="M 16.876685,62.791798 H 1.322915 v -15.55377" stroke="#000"
+                    style="fill:none;stroke-width:2.64583" />
                 <path class="fill" fill="#000"
                     d="m 32.057475,14.539168 c -12.12397,0 -23.237971,6.75578 -28.819947,17.51831 5.581976,10.76253 16.695977,17.51779 28.819947,17.51779 12.12403,10e-6 23.237479,-6.75532 28.819429,-17.51779 -5.58196,-10.76246 -16.695399,-17.51832 -28.819429,-17.51831 z m 0.001,5.74745 c 6.28509,0 11.345976,5.00087 11.656136,11.2112 a 1.4390351,1.4390351 0 0 1 0.113172,0.56069 1.4390351,1.4390351 0 0 1 -0.113172,0.55449 c -0.3073,6.21297 -5.369136,11.21481 -11.656136,11.21482 -6.48364,0 -11.771891,-5.28567 -11.771891,-11.76931 0,-6.48363 5.288251,-11.77189 11.771891,-11.77189 z m 0,2.87889 c -4.92821,0 -8.892997,3.9648 -8.892997,8.893 0,4.92821 3.964787,8.89041 8.892997,8.89041 4.9282,0 8.892481,-3.9622 8.892481,-8.89041 1e-5,-4.9282 -3.964281,-8.893 -8.892481,-8.893 z" />
             </svg>
             <div id="menuToggle" class="relative w-10 h-8 cursor-pointer">
                 <input type="checkbox" class="absolute top-[-7px] left-[-5px] w-10 h-8 opacity-0 z-10 cursor-pointer" />
-                <span class="block w-10 h-1 mb-2 mr-2 relative bg-(--theme-text) transition-all duration-300"></span>
-                <span class="block w-10 h-1 mb-2 mr-2 relative bg-(--theme-text) transition-all duration-300"></span>
-                <span class="block w-10 h-1 mr-2 relative bg-(--theme-text) transition-all duration-300"></span>
+                <span class="block w-10 h-1 mb-2 mr-2 bg-(--theme-text) transition-all duration-300"></span>
+                <span class="block w-10 h-1 mb-2 mr-2 bg-(--theme-text) transition-all duration-300"></span>
+                <span class="block w-10 h-1 mr-2 bg-(--theme-text) transition-all duration-300"></span>
+            </div>
+            <div
+                class="mobile-menu absolute left-0 top-24 w-full h-screen sm:h-[360px] lg:h-80 bg-colored border-b-2 border-(--theme-bg-80) opacity-0 pointer-events-none transition-opacity duration-300 z-10">
                 <div
-                    class="absolute top-full right-0 w-40 mt-2 bg-white shadow-lg rounded-md opacity-0 pointer-events-none transition-opacity duration-300">
-                    <a class="hover-underline-slide" href="">Головна</a>
-                    <a class="hover-underline-slide" href="">Сайт громади</a>
-                    <a class="hover-underline-slide" href="">Послуги</a>
-                    <a class="hover-underline-slide" href="">Документи</a>
-                    <a class="hover-underline-slide" href="">Новини</a>
-                    <a class="hover-underline-slide" href="">Мобільна валіза</a>
-                    <a class="hover-underline-slide" href="">Е-Черга</a>
-                    <a class="hover-underline-slide" href="">Контакти</a>
+                    class="w-full h-full p-8 flex flex-col justify-start sm:flex-row sm:justify-center sm:flex-wrap gap-4">
+                    <div class="flex flex-col sm:w-[47%] lg:w-[20%]">
+                        <a class="hover-underline-slide mb-3" href="">Головна</a>
+                        <a class="hover-underline-slide mb-3" href="">Сайт громади</a>
+                        <a class="hover-underline-slide mb-3" href="">Послуги</a>
+                        <a class="hover-underline-slide mb-3" href="">Документи</a>
+                    </div>
+                    <div class="flex flex-col sm:w-[47%] lg:w-[20%]">
+                        <a class="hover-underline-slide mb-3" href="">Новини</a>
+                        <a class="hover-underline-slide mb-3" href="">Мобільна валіза</a>
+                        <a class="hover-underline-slide mb-3" href="">Е-Черга</a>
+                        <a class="hover-underline-slide mb-3" href="">Контакти</a>
+                    </div>
+                    <div class="flex flex-col sm:w-[47%] lg:w-[20%]">
+                    </div>
+                    <div class="flex flex-col sm:w-[47%] lg:w-[20%] lg:justify-end">
+                        <a class="button-transparent mb-2" href="tel:">Гаряча лінія <img
+                                src="/img/material-design/tel.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
-    <dialog id="accessibility-dialog" class="relative w-sm top-20 mx-auto p-8">
+    <dialog id="accessibility-dialog" class="relative top-20 mx-auto pt-8 pb-12 pl-8 pr-16 shadow-2xl">
         <svg id="accessibility-button-close" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960"
-            width="48px" class="absolute top-3 right-3 cursor-pointer">
+            width="48px" class="absolute top-2 right-2 cursor-pointer">
             <path class="fill" fill="#000"
                 d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
         </svg>
-        <h4 class="text-2xl m-auto">Налаштувати вигляд</h4>
-        <div class="mb-6">
-            <p class="text-sm font-medium mb-2">Розмір тексту</p>
-            <div class="flex gap-2">
-                <button
-                    class="w-10 h-10 rounded-lg border text-xl font-bold flex items-center justify-center text-gray-600 hover:bg-gray-100">−</button>
-                <button
-                    class="w-10 h-10 rounded-lg border text-xl font-bold flex items-center justify-center text-gray-600 hover:bg-gray-100">+</button>
-            </div>
-        </div>
-        <div class="mb-6">
-            <p class="text-sm font-medium mb-2">Колір</p>
-            <div class="flex gap-3">
-                <button
-                    class="flex-1 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-gray-100 text-sm font-medium border-black">
-                    <span class="w-4 h-4 rounded-full border border-gray-400 bg-yellow-200"></span>
-                    Колір
-                </button>
-                <button
-                    class="flex-1 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-gray-100 text-sm font-medium text-gray-700">
-                    <span class="w-4 h-4 rounded-full border border-gray-400 bg-black"></span>
-                    Ч/Б
-                </button>
-            </div>
-        </div>
-        <div class="space-y-2">
+        <h4 class="text-2xl m-auto mb-12">Налаштувати вигляд</h4>
+        <p class="text-sm font-medium mb-4">Розмір тексту</p>
+        <div class="flex items-end gap-2 mb-8">
             <button
-                class="w-full py-2 border rounded-lg text-sm font-medium flex items-center justify-center gap-2 hover:bg-gray-100">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4m0 4h.01" />
-                </svg>
-                Підкреслювати посилання
+                class="scale-down cursor-pointer hover:bg-colored w-10 h-10 rounded-lg border text-big font-bold text-center">−</button>
+            <button
+                class="scale-up cursor-pointer hover:bg-colored w-10 h-10 rounded-lg border text-big font-bold text-center">+</button>
+            <p class="text-medium" id="scale-value"></p>
+        </div>
+        <p class="text-sm font-medium mb-4">Колір</p>
+        <div class="flex gap-3 mb-8">
+            <button
+                class="color-enable cursor-pointer flex-1 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-colored text-regular">
+                <span class="w-4 h-4 rounded-full border border-gray-400 bg-[#FFF0B7]"></span>Колір
+            </button>
+            <button
+                class="color-disable cursor-pointer flex-1 py-2 border rounded-lg flex items-center justify-center gap-2 hover:bg-colored text-regular">
+                <span class="w-4 h-4 rounded-full border border-gray-400 bg-black"></span>Ч/Б
             </button>
         </div>
-
+        </div>
+    </dialog>
+    <dialog id="search-dialog" class="absolute z-20 w-full md:w-9/12 h-60 top-24 mx-auto shadow-2xl">
+        <svg id="search-button-close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+            width="24px" class="absolute top-4 right-4 cursor-pointer">
+            <path class="fill" fill="#000"
+                d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+        </svg>
+        <form class="p-8" action="">
+            <div class="styled-input mb-8">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='48px'%20viewBox='0%20-960%20960%20960'%20width='48px'%3e%3cpath%20fill='%23000'%20class='fill'%20d='M796-121%20533-384q-30%2026-69.96%2040.5Q423.08-329%20378-329q-108.16%200-183.08-75Q120-479%20120-585t75-181q75-75%20181.5-75t181%2075Q632-691%20632-584.85%20632-542%20618-502q-14%2040-42%2075l264%20262-44%2044ZM377-389q81.25%200%20138.13-57.5Q572-504%20572-585t-56.87-138.5Q458.25-781%20377-781q-82.08%200-139.54%2057.5Q180-666%20180-585t57.46%20138.5Q294.92-389%20377-389Z'/%3e%3c/svg%3e" alt="">
+                <input id="main-search-form-text" name="text" type="text" autocomplete="off" required="">
+                <label class="input-label" for="main-search-form-text">
+                    <span class="input-span">Введіть ваш пошуковий запит</span>
+                </label>
+            </div>
+            <button class="button-black w-full">Знайти</button>
+        </form>
     </dialog>
     <header class="bg-colored px-[16px] lg:px-[6%] xl:px-[8%] 2xl:px-[10%] py-8">
         <div class="flex flex-col md:flex-row gap-2 w-full">
@@ -110,7 +128,7 @@
             </div>
             <div class="flex flex-[1] items-center justify-start md:justify-end mt-2 md:mt-0">
                 <div class="flex items-start gap-8">
-                    <img class="hidden lg:block max-w-[200px] max-h-full object-contain" src="./img/logo.png" alt="">
+                    <img class="hidden lg:block max-w-[200px] max-h-full object-contain" src="/img/logo.png" alt="">
                     <div class="flex gap-4 flex-wrap items-start">
                         <a class="block" href="https://facebook.com" target="_blank">
                             <svg width="48" height="48" viewBox="0 0 36 36" fill="none"
@@ -237,12 +255,12 @@
                 <p class="text-sm md:text-base">Надано послуг</p>
             </div>
             <!-- text-align center if icon (items-center class) -->
-            <a href=""
+            <a href="/cherga"
                 class="hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
                 <img class="py-3" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='48px'%20viewBox='0%20-960%20960%20960'%20width='48px'%20class='fill'%20fill='%23000'%3e%3cpath%20d='M120-510v-330h330v330H120Zm60-60h210v-210H180v210Zm-60%20450v-330h330v330H120Zm60-60h210v-210H180v210Zm330-330v-330h330v330H510Zm60-60h210v-210H570v210Zm188%20450v-82h82v82h-82ZM510-367v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm-82%2083v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm83-82v-83h83v83h-83Zm0-165v-83h83v83h-83Zm83%2082v-82h82v82h-82Z'/%3e%3c/svg%3e" alt="">
                 <p class="text-sm md:text-base">Записатися в чергу</p>
             </a>
-            <a href=""
+            <a href="/cherga"
                 class="hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
                 <img class="py-3" src="data:image/svg+xml,%3csvg%20width='53'%20height='53'%20viewBox='0%200%2053%2053'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20class='fill'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.8321%2011.9246V15.0255L12.1329%2015.3269C10.862%2015.4292%209.66209%2015.9546%208.72504%2016.8192C7.788%2017.6838%207.16791%2018.8377%206.96391%2020.0962C6.87365%2020.6596%206.79067%2021.2238%206.71497%2021.7886C6.69797%2021.9253%206.72449%2022.0638%206.79074%2022.1846C6.85699%2022.3053%206.95961%2022.4021%207.08402%2022.4612L7.25217%2022.5398C19.1077%2028.1521%2033.3043%2028.1521%2045.1577%2022.5398L45.3258%2022.4612C45.4499%2022.4018%2045.552%2022.3049%2045.6179%2022.1841C45.6837%2022.0634%2045.7099%2021.925%2045.6927%2021.7886C45.6186%2021.2233%2045.5364%2020.6591%2045.446%2020.0962C45.242%2018.8377%2044.6219%2017.6838%2043.6848%2016.8192C42.7478%2015.9546%2041.5479%2015.4292%2040.277%2015.3269L36.5777%2015.0277V11.9268C36.578%2011.0115%2036.2497%2010.1265%2035.6525%209.43278C35.0554%208.73907%2034.2291%208.28272%2033.324%208.14673L30.6598%207.74711C27.7063%207.30565%2024.7036%207.30565%2021.7501%207.74711L19.0859%208.14673C18.1811%208.28267%2017.3551%208.7387%2016.7581%209.43196C16.161%2010.1252%2015.8324%2011.0097%2015.8321%2011.9246ZM30.1728%2010.9856C27.5422%2010.5927%2024.8677%2010.5927%2022.2371%2010.9856L19.5729%2011.3852C19.4436%2011.4046%2019.3256%2011.4697%2019.2402%2011.5686C19.1549%2011.6676%2019.1079%2011.7939%2019.1077%2011.9246V14.7963C23.8354%2014.5263%2028.5745%2014.5263%2033.3021%2014.7963V11.9246C33.302%2011.7939%2033.255%2011.6676%2033.1696%2011.5686C33.0843%2011.4697%2032.9662%2011.4046%2032.837%2011.3852L30.1728%2010.9856Z'%20fill='black'/%3e%3cpath%20class='fill'%20d='M46.1161%2026.3573C46.1118%2026.2867%2046.0904%2026.2182%2046.0537%2026.1577C46.0171%2026.0972%2045.9663%2026.0465%2045.9057%2026.01C45.8451%2025.9735%2045.7766%2025.9522%2045.706%2025.948C45.6354%2025.9439%2045.5648%2025.9569%2045.5003%2025.986C33.3347%2031.3733%2019.0748%2031.3733%206.90909%2025.986C6.84463%2025.9569%206.77407%2025.9439%206.70345%2025.948C6.63284%2025.9522%206.5643%2025.9735%206.50372%2026.01C6.44314%2026.0465%206.39234%2026.0972%206.35568%2026.1577C6.31902%2026.2182%206.29761%2026.2867%206.29327%2026.3573C6.0721%2030.538%206.29684%2034.7305%206.96369%2038.8636C7.16723%2040.1226%207.78713%2041.2769%208.72422%2042.1419C9.6613%2043.007%2010.8614%2043.5327%2012.1326%2043.6351L16.2206%2043.9627C22.8658%2044.4999%2029.5415%2044.4999%2036.1888%2043.9627L40.2768%2043.6351C41.548%2043.5327%2042.7481%2043.007%2043.6852%2042.1419C44.6223%2041.2769%2045.2422%2040.1226%2045.4457%2038.8636C46.114%2034.7254%2046.3411%2030.5326%2046.1161%2026.3595'%20fill='black'/%3e%3c/svg%3e" alt="">
                 <p class="text-sm md:text-base">Електронна валіза</p>
@@ -251,20 +269,24 @@
     </header>
     <main>
         <section class="section-wrapper">
-            <div class="flex justify-between items-center w-full mb-6">
+            <div class="flex justify-between items-end w-full mb-6">
                 <h2 class="text-biggest">Актуальне</h2>
                 <a class="button-transparent" href="">Всі новини</a>
             </div>
             <div class="flex flex-col lg:flex-row gap-2 justify-between">
                 <div class="bg-colored flex flex-col lg:flex-row flex-[2] rounded-4xl overflow-hidden">
-                    <img class="w-full h-[320px] lg:h-[380px] object-cover flex-[1]" src="./img/sample-1.jpg" alt="">
+                    <img class="w-full h-[320px] lg:h-[380px] object-cover flex-[1]" src="/img/sample-1.jpg" alt="">
                     <a href="" class="relative hover:bg-colored flex-[1] p-4">
                         <div class="flex justify-between mb-2">
                             <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Важливе</p>
-                            <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">24.10.2025 10:15</p>
+                            <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">24.10.2025 10:15
+                            </p>
                         </div>
-                        <h3 class="text-big mb-3 max-h-[96px] overflow-hidden">Військові та ветерани можуть безоплатно лікувати зуби в 100</h3>
-                        <p class="text-regular max-h-[144px] overflow-hidden mb-5 lg:mb-0">Військові та ветерани окрім зубопротезування можуть безоплатно отримати послуги із лікування зубів в межах пілотного проєкту “Зубопротезування окремих категорій осіб, які захищали незалежність</p>
+                        <h3 class="text-big mb-3 max-h-[96px] overflow-hidden">Військові та ветерани можуть безоплатно
+                            лікувати зуби в 100</h3>
+                        <p class="text-regular max-h-[144px] overflow-hidden mb-5 lg:mb-0">Військові та ветерани окрім
+                            зубопротезування можуть безоплатно отримати послуги із лікування зубів в межах пілотного
+                            проєкту “Зубопротезування окремих категорій осіб, які захищали незалежність</p>
                         <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                     </a>
                 </div>
@@ -274,137 +296,482 @@
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">24.10.2025 10:15</p>
                     </div>
                     <h3 class="text-big mb-3 max-h-[96px] overflow-hidden">До уваги жителів громади!</h3>
-                    <p class="text-regular max-h-[144px] overflow-hidden mb-5 lg:mb-0">Актуалізуйте дані у Реєстрі Луцької міської територіальної громади</p>
+                    <p class="text-regular max-h-[144px] overflow-hidden mb-5 lg:mb-0">Актуалізуйте дані у Реєстрі
+                        Луцької міської територіальної громади</p>
                     <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
             </div>
         </section>
         <section class="section-wrapper">
-            <div class="flex justify-between items-center w-full mb-6">
+            <div class="flex justify-between items-end w-full mb-6">
                 <h2 class="text-biggest">Наші послуги</h2>
                 <a class="button-transparent" href="https://diia.gov.ua/services" target="_blank">Всі послуги</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
                 <a class="bg-colored rounded-3xl relative hover:bg-colored p-10" href="">
-                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності</h3>
-                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.</p>
+                    <h3 class="text-medium max-h-[74px] md:max-h-[86px] overflow-hidden mb-6">Безпека життєдіяльності
+                    </h3>
+                    <p class="text-regular border-t-2 max-h-[168px] overflow-hidden pt-6 pr-2">Тут ви можете дізнатися
+                        все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут ви можете
+                        дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця проживання.Тут
+                        ви можете дізнатися все про паспортні послуги, реєстрацію актів цивільного стану або місця
+                        проживання.</p>
                     <img class="absolute bottom-4 right-4 w-10 h-10" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
-                <div class="bg-colored flex flex-col justify-between rounded-3xl col-start-1 md:col-start-2 lg:col-start-3 md:row-start-2 row-span-2 p-10">
+                <div
+                    class="bg-colored flex flex-col justify-between rounded-3xl col-start-1 md:col-start-2 lg:col-start-3 md:row-start-2 row-span-2 p-10">
                     <h3 class="text-big">Записатись до електронної черги</h3>
-                    <img class="w-2/3 h-auto my-2" src="./img/register.svg" alt="">
+                    <img class="w-2/3 h-auto my-2" src="/img/register.svg" alt="">
                     <a class="button-black w-full text-center" href="">Записатися</a>
                 </div>
             </div>
         </section>
         <section class="section-wrapper">
-            <div class="flex justify-between items-center w-full mb-6">
+            <div class="flex justify-between items-end w-full mb-6">
                 <h2 class="text-biggest">Державні послуги онлайн</h2>
                 <a class="button-transparent" href="https://diia.gov.ua/services" target="_blank">Всі онлайн послуги</a>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-                <div class="flex flex-col">
-                    <img class="w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-1.png" alt="">
-                    <a class="hover:text-colored text-medium w-full py-4 border-b-2" href="https://diia.gov.ua/services/yemalyatko" target="_blank">Ємалятко</a>
-                </div>
-                <div class="flex flex-col">
-                    <img class="hidden md:block w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-2.jpg" alt="">
-                    <a class="hover:text-colored text-medium w-full py-4 border-b-2" href="https://diia.gov.ua/services/dovidka-pro-dohodi" target="_blank">Довідка про доходи</a>
-                </div>
-                <div class="flex flex-col">
-                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-3.png" alt="">
-                    <a class="hover:text-colored text-medium w-full py-4 border-b-2" href="https://diia.gov.ua/services/reyestraciya-fop" target="_blank">Реєстрація ФОП</a>
-                </div>
-                <div class="flex flex-col">
-                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="./img/cabinet-4.jpg" alt="">
-                    <a class="hover:text-colored text-medium w-full py-4 border-b-2" href="https://diia.gov.ua/services/poshkodzhene-majno" target="_blank">Пошкоджене майно</a>
-                </div>
+                <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/yemalyatko"
+                    target="_blank">
+                    <img class="w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-1.png"
+                        alt="Зображення до послуги 'Ємалятко'">
+                    <p class="text-medium w-full py-4 border-b-2">Ємалятко</p>
+                </a>
+                <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/dovidka-pro-dohodi"
+                    target="_blank">
+                    <img class="hidden md:block w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-2.jpg"
+                        alt="Зображення до послуги 'Довідка про доходи'">
+                    <p class="text-medium w-full py-4 border-b-2">Довідка про доходи</p>
+                </a>
+                <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/reyestraciya-fop"
+                    target="_blank">
+                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-3.png"
+                        alt="Зображення до послуги 'Реєстрація ФОП'">
+                    <p class="text-medium w-full py-4 border-b-2">Реєстрація ФОП</p>
+                </a>
+                <a class="hover:text-colored flex flex-col" href="https://diia.gov.ua/services/poshkodzhene-majno"
+                    target="_blank">
+                    <img class="hidden lg:block w-full aspect-square object-cover rounded-3xl" src="/img/cabinet-4.jpg"
+                        alt="Зображення до послуги 'Пошкоджене майно'">
+                    <p class="text-medium w-full py-4 border-b-2">Пошкоджене майно</p>
+                </a>
             </div>
         </section>
         <section class="section-wrapper">
-            <div class="flex justify-between items-center w-full mb-6">
+            <div class="flex justify-between items-end w-full mb-6">
                 <h2 class="text-biggest">Адреси та контакти ЦНАП</h2>
                 <a class="button-transparent" href="" target="_blank">Всі адреси</a>
             </div>
         </section>
         <section class="section-wrapper">
-                <h2 class="text-biggest">Директор департаменту</h2>
+            <div class="flex gap-2">
+                <div class="flex-1">
+                    <h2 class="text-biggest mb-12">Директор департаменту</h2>
+                    <div class="flex gap-4 justify-between">
+                        <img class="w-full flex-1 aspect-square object-cover rounded-2xl" src="/img/photo-1.jpg" alt="">
+                        <div class="flex flex-col justify-between flex-1">
+                            <h3 class="text-big mb-6">Наталія Середюк</h3>
+                            <p class="text-regular mb-4">69105, Запоріжжя, проспект Соборний, 206</p>
+                            <p class="text-regular mb-4">+38 0612 246 900</p>
+                            <p class="text-regular mb-6 ">info@zp.gov.ua, zvern@zp.gov.ua</p>
+                            <a class="button-black w-full text-center" href="">Детально про команду</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-1">
+                    <div class="grid grid-cols-2 gap-2">
+                        <a href="/cherga"
+                            class="bg-colored hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
+                            <img class="py-3" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20height='48px'%20viewBox='0%20-960%20960%20960'%20width='48px'%20class='fill'%20fill='%23000'%3e%3cpath%20d='M120-510v-330h330v330H120Zm60-60h210v-210H180v210Zm-60%20450v-330h330v330H120Zm60-60h210v-210H180v210Zm330-330v-330h330v330H510Zm60-60h210v-210H570v210Zm188%20450v-82h82v82h-82ZM510-367v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm-82%2083v-83h82v83h-82Zm82%2082v-82h83v82h-83Zm83-82v-83h83v83h-83Zm0-165v-83h83v83h-83Zm83%2082v-82h82v82h-82Z'/%3e%3c/svg%3e" alt="">
+                            <p class="text-sm md:text-base">Записатися в чергу</p>
+                        </a>
+                        <a href="/cherga"
+                            class="bg-colored hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
+                            <img class="py-3" src="data:image/svg+xml,%3csvg%20width='53'%20height='53'%20viewBox='0%200%2053%2053'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20class='fill'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M15.8321%2011.9246V15.0255L12.1329%2015.3269C10.862%2015.4292%209.66209%2015.9546%208.72504%2016.8192C7.788%2017.6838%207.16791%2018.8377%206.96391%2020.0962C6.87365%2020.6596%206.79067%2021.2238%206.71497%2021.7886C6.69797%2021.9253%206.72449%2022.0638%206.79074%2022.1846C6.85699%2022.3053%206.95961%2022.4021%207.08402%2022.4612L7.25217%2022.5398C19.1077%2028.1521%2033.3043%2028.1521%2045.1577%2022.5398L45.3258%2022.4612C45.4499%2022.4018%2045.552%2022.3049%2045.6179%2022.1841C45.6837%2022.0634%2045.7099%2021.925%2045.6927%2021.7886C45.6186%2021.2233%2045.5364%2020.6591%2045.446%2020.0962C45.242%2018.8377%2044.6219%2017.6838%2043.6848%2016.8192C42.7478%2015.9546%2041.5479%2015.4292%2040.277%2015.3269L36.5777%2015.0277V11.9268C36.578%2011.0115%2036.2497%2010.1265%2035.6525%209.43278C35.0554%208.73907%2034.2291%208.28272%2033.324%208.14673L30.6598%207.74711C27.7063%207.30565%2024.7036%207.30565%2021.7501%207.74711L19.0859%208.14673C18.1811%208.28267%2017.3551%208.7387%2016.7581%209.43196C16.161%2010.1252%2015.8324%2011.0097%2015.8321%2011.9246ZM30.1728%2010.9856C27.5422%2010.5927%2024.8677%2010.5927%2022.2371%2010.9856L19.5729%2011.3852C19.4436%2011.4046%2019.3256%2011.4697%2019.2402%2011.5686C19.1549%2011.6676%2019.1079%2011.7939%2019.1077%2011.9246V14.7963C23.8354%2014.5263%2028.5745%2014.5263%2033.3021%2014.7963V11.9246C33.302%2011.7939%2033.255%2011.6676%2033.1696%2011.5686C33.0843%2011.4697%2032.9662%2011.4046%2032.837%2011.3852L30.1728%2010.9856Z'%20fill='black'/%3e%3cpath%20class='fill'%20d='M46.1161%2026.3573C46.1118%2026.2867%2046.0904%2026.2182%2046.0537%2026.1577C46.0171%2026.0972%2045.9663%2026.0465%2045.9057%2026.01C45.8451%2025.9735%2045.7766%2025.9522%2045.706%2025.948C45.6354%2025.9439%2045.5648%2025.9569%2045.5003%2025.986C33.3347%2031.3733%2019.0748%2031.3733%206.90909%2025.986C6.84463%2025.9569%206.77407%2025.9439%206.70345%2025.948C6.63284%2025.9522%206.5643%2025.9735%206.50372%2026.01C6.44314%2026.0465%206.39234%2026.0972%206.35568%2026.1577C6.31902%2026.2182%206.29761%2026.2867%206.29327%2026.3573C6.0721%2030.538%206.29684%2034.7305%206.96369%2038.8636C7.16723%2040.1226%207.78713%2041.2769%208.72422%2042.1419C9.6613%2043.007%2010.8614%2043.5327%2012.1326%2043.6351L16.2206%2043.9627C22.8658%2044.4999%2029.5415%2044.4999%2036.1888%2043.9627L40.2768%2043.6351C41.548%2043.5327%2042.7481%2043.007%2043.6852%2042.1419C44.6223%2041.2769%2045.2422%2040.1226%2045.4457%2038.8636C46.114%2034.7254%2046.3411%2030.5326%2046.1161%2026.3595'%20fill='black'/%3e%3c/svg%3e" alt="">
+                            <p class="text-sm md:text-base">Електронна валіза</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="section-wrapper">
-            <div class="flex justify-between items-center w-full mb-6">
+            <div class="flex justify-between items-end w-full mb-6">
                 <h2 class="text-biggest">Новини</h2>
                 <a class="button-transparent" href="" target="_blank">Всі новини</a>
             </div>
-            <div class="flex gap-4 justify-start overflow-x-auto snap-x scroll-smooth">
-                <a href="" class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-sm overflow-hidden snap-start">
-                    <img class="w-full aspect-video object-cover mb-2" src="./img/sample-2.jpg" alt="">
+            <div id="news-scrollbar"
+                class="flex gap-4 justify-start overflow-x-auto snap-x scroll-smooth scrollbar-hide">
+                <a href=""
+                    class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-xs overflow-hidden snap-start">
+                    <img class="w-full aspect-video object-cover mb-2" src="/img/sample-2.jpg" alt="">
                     <div class="flex flex-wrap px-4 my-4 gap-2">
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Новини</p>
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Соціальний захист</p>
                     </div>
-                    <p class="text-small px-4 mb-4 text-[#888]">24.10.2025 10:15</p>
-                    <h3 class="text-big px-4 mb-3 max-h-[96px] overflow-hidden">Презентація народної творчості відбулася в місцевому РБК</h3>
-                    <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю Дніпровської ГЕС буде...</p>
+                    <p class="text-small px-4 mb-4 text-[#707070]">24.10.2025 10:15</p>
+                    <h3 class="text-big px-4 mb-3 max-h-[96px] overflow-hidden">Презентація народної творчості відбулася
+                        в місцевому РБК</h3>
+                    <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції
+                        Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю
+                        Дніпровської ГЕС буде...</p>
                     <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
-                <a href="" class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-sm overflow-hidden snap-start">
-                    <img class="w-full aspect-video object-cover mb-2" src="./img/sample-3.jpg" alt="">
+                <a href=""
+                    class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-xs overflow-hidden snap-start">
+                    <img class="w-full aspect-video object-cover mb-2" src="/img/sample-3.jpg" alt="">
                     <div class="flex flex-wrap px-4 my-4 gap-2">
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Новини</p>
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Соціальний захист</p>
                     </div>
-                    <p class="text-small px-4 mb-4 text-[#888]">24.10.2025 10:15</p>
-                    <h3 class="text-big px-4 mb-3 max-h-[96px] overflow-hidden">Презентація народної творчості відбулася в місцевому РБК</h3>
-                    <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю Дніпровської ГЕС буде...</p>
+                    <p class="text-small px-4 mb-4 text-[#707070]">24.10.2025 10:15</p>
+                    <h3 class="text-big px-4 mb-3 max-h-[96px] overflow-hidden">Презентація народної творчості відбулася
+                        в місцевому РБК</h3>
+                    <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції
+                        Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю
+                        Дніпровської ГЕС буде...</p>
                     <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
-                <a href="" class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-sm overflow-hidden snap-start">
-                    <img class="w-full aspect-video object-cover mb-2" src="./img/sample-2.jpg" alt="">
+                <a href=""
+                    class="bg-colored rounded-4xl relative hover:bg-colored flex-[1] max-w-10/12 md:max-w-md min-w-xs overflow-hidden snap-start">
+                    <img class="w-full aspect-video object-cover mb-2" src="/img/sample-2.jpg" alt="">
                     <div class="flex flex-wrap px-4 my-4 gap-2">
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Новини</p>
                         <p class="block bg-colored-80 text-small font-light rounded-3xl py-1 px-2">Соціальний захист</p>
                     </div>
-                    <p class="text-small px-4 mb-4 text-[#888]">24.10.2025 10:15</p>
-                    <h3 class="text-big px-4 mb-3 max-h-[96px] overflow-hidden">Презентація народної творчості відбулася в місцевому РБК</h3>
-                    <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю Дніпровської ГЕС буде...</p>
+                    <p class="text-small px-4 mb-4 text-[#707070]">24.10.2025 10:15</p>
+                    <h3 class="text-big px-4 mb-3 max-h-[96px] overflow-hidden">Презентація народної творчості відбулася
+                        в місцевому РБК</h3>
+                    <p class="text-regular max-h-[72px] overflow-hidden px-4 mb-10">За інформацією Патрульної поліції
+                        Запорізької оласті, з 12 квітня по 30 червня 2025 року рух автотранспорту через греблю
+                        Дніпровської ГЕС буде...</p>
                     <img class="absolute bottom-4 right-4" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'%20standalone='no'?%3e%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20version='1.1'%20id='svg3'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:svg='http://www.w3.org/2000/svg'%3e%3cdefs%20id='defs3'%20/%3e%3cpath%20id='path1'%20d='M%2011.138672%200.6953125%20C%205.3720419%200.6953125%200.6953125%205.3701087%200.6953125%2011.136719%20C%200.6953125%2016.903319%205.3720419%2021.578125%2011.138672%2021.578125%20C%2016.905272%2021.578125%2021.578125%2016.903319%2021.578125%2011.136719%20C%2021.578125%205.3701088%2016.905272%200.6953125%2011.138672%200.6953125%20z%20M%2011.630859%206.1894531%20L%2016.576172%2011.136719%20L%2011.630859%2016.083984%20L%2010.644531%2015.099609%20L%2013.865234%2011.878906%20L%205.1972656%2011.878906%20L%205.1972656%2010.488281%20L%2013.958984%2010.488281%20L%2010.644531%207.1738281%20L%2011.630859%206.1894531%20z%20'%20style='fill:%23000000'%20/%3e%3c/svg%3e" alt="">
                 </a>
+            </div>
+            <div class="slider-control-dots flex lg:hidden w-full justify-center gap-1 mt-3"
+                data-target="news-scrollbar">
+                <span class="w-4 h-4 bg-black cursor-pointer"></span>
+                <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
+                <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
+            </div>
+        </section>
+        <!-- Gallery -->
+        <section class="section-wrapper">
+            <div class="flex justify-between items-end w-full mb-6">
+                <h2 class="text-biggest">Галерея</h2>
+                <div class="slider-control-arrows flex gap-8" data-target="galleryContainer">
+                    <svg fill="#959595" width="18" height="29" viewBox="0 0 18 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.1776 28.3551L0 14.1775L14.1776 0L17.1551 3.01642L5.99398 14.1775L17.1551 25.3387L14.1776 28.3551Z" />
+                    </svg>
+                    <svg class="cursor-pointer" fill="black" width="18" height="29" viewBox="0 0 18 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+                    </svg>
+                </div>
+            </div>
+            <div id="galleryContainer"
+                class="grid grid-rows-1 md:grid-rows-2 grid-flow-col auto-cols-[calc(50%)] lg:auto-cols-[calc(33.333%)] gap-4 overflow-x-auto scroll-smooth snap-x scrollbar-hide pr-1">
+                <a class="snap-start" href="/img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/cabinet-1.png"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-101 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/cabinet-2.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/cabinet-2.jpg"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/cabinet-3.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/cabinet-3.png"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/cabinet-4.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/cabinet-4.jpg"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/sample-1.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/sample-1.jpg"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/sample-2.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/sample-2.jpg"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/cabinet-1.png"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/cabinet-2.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/cabinet-2.jpg"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/sample-3.jpg" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/sample-3.jpg"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+                <a class="snap-start" href="/img/logo.png" data-pswp-width="1280" data-pswp-height="720">
+                    <img src="/img/logo.png"
+                        class="w-full aspect-video object-cover rounded-lg md:hover:scale-102 transition-transform"
+                        alt="">
+                </a>
+            </div>
+            <div class="slider-control-dots flex w-full justify-center gap-1 mt-3" data-target="galleryContainer">
+                <span class="w-4 h-4 bg-black cursor-pointer"></span>
+                <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
+                <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
             </div>
         </section>
     </main>
     <footer class="section-wrapper bg-colored">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pb-4 border-b-2">
+            <div class="flex flex-col mb-6">
+                <h3 class="text-regular mb-8">ГРОМАДА</h3>
+                <a class="hover:text-colored text-regular mb-2" href="">Контакти та звернення</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Міський голова</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Депутатський корпус</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Виконком</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Інвестиційний паспорт</a>
+                <a class="text-regular mb-2" href="">Паспорт громади</a>
+            </div>
+            <div class="flex flex-col mb-6">
+                <h3 class="text-regular mb-8">ДОКУМЕНТИ ТА ДАНІ</h3>
+                <a class="hover:text-colored text-regular mb-2" href="">Публічна інформація</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Фінанси</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Документи (НПА)</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Виконком</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Регуляторна діяльність</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Містобудівна документація</a>
+            </div>
+            <div class="flex flex-col mb-6">
+                <h3 class="text-regular mb-8">ГРОМАДЯНАМ</h3>
+                <a class="hover:text-colored text-regular mb-2" href="">Кабінет мешканця</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Вакансії</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Послуги</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Чат-бот «СВОЇ»</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Довідник закладів</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Програма «ВідновиДІМ»</a>
+            </div>
+            <div class="flex flex-col mb-6">
+                <h3 class="text-regular mb-8">ГРОМАДСЬКА УЧАСТЬ</h3>
+                <a class="hover:text-colored text-regular mb-2" href="">Електронні петиції</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Громадський бюджет</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Електронні консультації</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Молодіжна рада</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Інвестиційний паспорт</a>
+                <a class="hover:text-colored text-regular mb-2" href="">Органи самоорганізації</a>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row py-8 gap-2 border-b-2">
+            <div class="flex flex-col lg:flex-row flex-[3] items-center gap-4">
+                <div class="flex flex-1 gap-6 items-center">
+                    <img class="w-20 h-auto" src="/img/logo.png" alt="">
+                    <h3 class="text-big">Центр надання адміністративних послуг</h3>
+                </div>
+                <div class="flex-1">
+                    <p class="text-small font-normal mb-8">Створено в рамках швейцарсько-української програми
+                        «Електронне урядування задля підзвітності влади та участі громади» (EGAP), що реалізується
+                        Фондом Східна Європа у партнерстві з Міністерством цифрової трансформації України та
+                        фінансується Швейцарією.</p>
+                    <div class="flex items-center gap-4 mb-4">
+                        <img class="w-12 h-12" src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M44.0617%2010.7075C40.0457%204.67298%2033.5324%200.812917%2026.2766%200.121815C18.8352%20-0.586143%2011.8325%201.97599%206.82097%207.21825C3.76679%2010.4209%201.75879%2013.9776%200.594494%2018.3433C0.071402%2020.2649%200.00390625%2020.9897%200.00390625%2024.0744C0.00390625%2027.1591%200.0882759%2027.9007%200.611368%2029.8898C2.9231%2038.5875%209.70642%2045.2626%2018.464%2047.437C19.2233%2047.6224%2020.1514%2047.8247%2020.5226%2047.8753C22.1931%2048.1113%2026.226%2048.0101%2028.0146%2047.6899C35.4054%2046.4088%2041.9862%2041.6385%2045.361%2035.1152C49.3095%2027.4962%2048.7864%2017.8208%2044.0617%2010.7075ZM43.083%2029.1144C41.1425%2036.2783%2035.2704%2041.7396%2027.8459%2043.2567C16.2704%2045.6503%204.98172%2036.9019%204.27301%2024.9846C3.80054%2017.2814%208.47462%209.56126%2015.646%206.17317C18.3627%204.89211%2020.5395%204.42013%2023.8468%204.40328C27.0191%204.38642%2028.7908%204.72354%2031.5582%205.83605C37.1265%208.06106%2041.4969%2013.101%2043.0999%2019.1693C43.7749%2021.6977%2043.758%2026.586%2043.083%2029.1144Z'%20fill='black'/%3e%3cpath%20d='M14.5662%2031.0011C12.3725%2030.2257%2010.702%2027.9501%2010.3983%2025.3543C9.95957%2021.5111%2011.4107%2018.5275%2014.3637%2017.179C15.9667%2016.4542%2018.869%2016.4711%2020.5901%2017.2127C21.6363%2017.6679%2023.6106%2019.4378%2023.6106%2019.9434C23.6106%2020.0277%2022.9356%2020.4323%2022.0919%2020.8368L20.5733%2021.5785L19.7633%2020.7694C19.3077%2020.3143%2018.6328%2019.8929%2018.2109%2019.8255C17.1647%2019.6232%2015.9329%2020.0951%2015.3592%2020.8874C14.4312%2022.1853%2014.3637%2025.6071%2015.2411%2026.9556C15.6967%2027.6467%2016.4729%2028.1355%2017.1816%2028.203C18.7003%2028.3209%2019.0884%2028.1861%2019.9827%2027.2422L20.8939%2026.2814L22.0582%2026.9219C22.6994%2027.2759%2023.3237%2027.6467%2023.4418%2027.7478C23.8299%2028.1018%2022.0244%2029.956%2020.5733%2030.6808C19.3415%2031.3045%2018.9534%2031.3888%2017.3166%2031.3719C16.3379%2031.3382%2015.0724%2031.1865%2014.5662%2031.0011ZM28.4871%2031.0011C26.3273%2030.2425%2024.6736%2028.0344%2024.3193%2025.4385C23.8131%2021.6796%2025.3148%2018.5275%2028.2847%2017.179C30.0058%2016.4037%2032.925%2016.4542%2034.663%2017.3139C35.7429%2017.8364%2037.5484%2019.4883%2037.5484%2019.9603C37.5484%2020.0446%2036.8397%2020.4491%2035.9792%2020.8537L34.4099%2021.6122L33.5999%2020.7188C32.8744%2019.9266%2032.6719%2019.8255%2031.6763%2019.8255C30.2927%2019.8255%2029.4152%2020.3648%2028.9427%2021.4942C28.5209%2022.5056%2028.4534%2024.9834%2028.8415%2026.1296C29.6177%2028.4221%2032.4525%2028.9783%2034.0555%2027.141L34.7811%2026.3151L36.1648%2027.023C36.9241%2027.4107%2037.5484%2027.7816%2037.5484%2027.8658C37.5484%2028.3884%2035.7429%2030.0571%2034.5449%2030.6639C33.3131%2031.2876%2032.925%2031.3719%2031.2882%2031.3551C30.2589%2031.3382%2029.0102%2031.1865%2028.4871%2031.0011Z'%20fill='black'/%3e%3c/svg%3e" alt="copyright">
+                        <p class="text-small font-normal">Весь контент доступний за ліцензією Creative Commons
+                            Attribution 4.0 International license, якщо не зазначено інше.</p>
+                    </div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <img class="w-12 h-12" src="/img/svoi.png" alt="svoi-logo">
+                        <a href="https://toolkit.in.ua" target="_blank" class="text-small font-normal underline">Хочете
+                            такий сайт з чат-ботом для громади?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-[1] flex flex-col items-center">
+                <h3 class="text-medium text-center mb-4">Слідкуй за нами тут:</h3>
+                <div class="flex gap-4 flex-wrap items-start mb-12">
+                    <a class="block" href="https://facebook.com" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="stroke" stroke="#000" stroke-width="2"
+                                d="M3.57194 3.57355L3.57355 3.57194C4.79714 2.34556 6.37314 1.68775 8.68919 1.34759C11.0392 1.00245 14.0222 1 17.9967 1C21.9712 1 24.9545 1.00243 27.3055 1.34683C29.6222 1.68621 31.2004 2.34254 32.4273 3.56622C33.6543 4.79331 34.3122 6.37149 34.6524 8.68833C34.9976 11.0391 35 14.0222 35 17.9967C35 21.9712 34.9976 24.9543 34.6524 27.3051C34.3122 29.622 33.6543 31.2002 32.4273 32.4273C31.2003 33.6542 29.6207 34.3122 27.3027 34.6524C24.9511 34.9976 21.9679 35 17.9967 35C14.0255 35 11.0424 34.9976 8.69159 34.6524C6.37446 34.3122 4.79699 33.6543 3.57355 32.4281L3.57275 32.4273C2.34581 31.2003 1.68782 29.6207 1.3476 27.3027C1.00244 24.9511 1 21.9679 1 17.9967C1 14.0255 1.00244 11.0424 1.3476 8.69159C1.68781 6.37446 2.34571 4.79699 3.57194 3.57355Z">
+                            </path>
+                            <path class="fill" fill="#000"
+                                d="M15.9053 28V19.502H13V16.125H15.9053V13.4643C15.9053 10.5734 17.7083 9 20.3409 9C21.6023 9 22.6856 9.09277 23 9.13359V12.1543H21.1742C19.7424 12.1543 19.4659 12.8223 19.4659 13.7982V16.125H22.697L22.2538 19.502H19.4659V28">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="block" href="https://x.com" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="stroke" stroke="#000" stroke-width="2"
+                                d="M3.57194 3.57355L3.57355 3.57194C4.79714 2.34556 6.37314 1.68775 8.68919 1.34759C11.0392 1.00245 14.0222 1 17.9967 1C21.9712 1 24.9545 1.00243 27.3055 1.34683C29.6222 1.68621 31.2004 2.34254 32.4273 3.56622C33.6543 4.79331 34.3122 6.37149 34.6524 8.68833C34.9976 11.0391 35 14.0222 35 17.9967C35 21.9712 34.9976 24.9543 34.6524 27.3051C34.3122 29.622 33.6543 31.2002 32.4273 32.4273C31.2003 33.6542 29.6207 34.3122 27.3027 34.6524C24.9511 34.9976 21.9679 35 17.9967 35C14.0255 35 11.0424 34.9976 8.69159 34.6524C6.37446 34.3122 4.79699 33.6543 3.57355 32.4281L3.57275 32.4273C2.34581 31.2003 1.68782 29.6207 1.3476 27.3027C1.00244 24.9511 1 21.9679 1 17.9967C1 14.0255 1.00244 11.0424 1.3476 8.69159C1.68781 6.37446 2.34571 4.79699 3.57194 3.57355Z">
+                            </path>
+                            <path class="fill" fill="#000"
+                                d="M25.1498 13.7383C25.1612 13.9023 25.1612 14.0664 25.1612 14.2305C25.1612 19.2344 21.4493 25 14.665 25C12.5749 25 10.6333 24.3789 9 23.3008C9.29697 23.3359 9.58247 23.3477 9.89086 23.3477C11.6155 23.3477 13.2031 22.75 14.4708 21.7305C12.849 21.6953 11.4898 20.6055 11.0216 19.1055C11.25 19.1406 11.4784 19.164 11.7183 19.164C12.0495 19.164 12.3807 19.1172 12.6891 19.0352C10.9987 18.6836 9.73094 17.1601 9.73094 15.3203V15.2734C10.222 15.5547 10.7932 15.7305 11.3984 15.7539C10.4048 15.0742 9.75379 13.914 9.75379 12.6015C9.75379 11.8984 9.9365 11.2539 10.2563 10.6914C12.0723 12.9883 14.802 14.4882 17.8629 14.6523C17.8058 14.3711 17.7716 14.0781 17.7716 13.7852C17.7716 11.6992 19.4162 10 21.4607 10C22.5228 10 23.4822 10.457 24.1561 11.1953C24.9898 11.0313 25.7893 10.7148 26.4975 10.2813C26.2233 11.1602 25.6409 11.8985 24.8756 12.3672C25.618 12.2852 26.3376 12.0742 27 11.7813C26.4975 12.5312 25.8693 13.1992 25.1498 13.7383Z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="block" href="https://instagram.com" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="stroke" stroke="#000" stroke-width="2"
+                                d="M3.57194 3.57355L3.57355 3.57194C4.79714 2.34556 6.37314 1.68775 8.68919 1.34759C11.0392 1.00245 14.0222 1 17.9967 1C21.9712 1 24.9545 1.00243 27.3055 1.34683C29.6222 1.68621 31.2004 2.34254 32.4273 3.56622C33.6543 4.79331 34.3122 6.37149 34.6524 8.68833C34.9976 11.0391 35 14.0222 35 17.9967C35 21.9712 34.9976 24.9543 34.6524 27.3051C34.3122 29.622 33.6543 31.2002 32.4273 32.4273C31.2003 33.6542 29.6207 34.3122 27.3027 34.6524C24.9511 34.9976 21.9679 35 17.9967 35C14.0255 35 11.0424 34.9976 8.69159 34.6524C6.37446 34.3122 4.79699 33.6543 3.57355 32.4281L3.57275 32.4273C2.34581 31.2003 1.68782 29.6207 1.3476 27.3027C1.00244 24.9511 1 21.9679 1 17.9967C1 14.0255 1.00244 11.0424 1.3476 8.69159C1.68781 6.37446 2.34571 4.79699 3.57194 3.57355Z">
+                            </path>
+                            <path class="fill" fill-rule="evenodd" clip-rule="evenodd" fill="#000"
+                                d="M26.9933 6.23804C26.3362 6.23804 25.6914 6.50341 25.2278 6.96937C24.7605 7.43334 24.4932 8.07916 24.4932 8.73861C24.4932 9.3955 24.7616 10.0405 25.2278 10.5064C25.6905 10.9704 26.3362 11.238 26.9933 11.238C27.6524 11.238 28.2949 10.9704 28.7608 10.5064C29.227 10.0405 29.4932 9.39436 29.4932 8.73861C29.4932 8.07916 29.227 7.43334 28.7608 6.96937C28.2969 6.50341 27.6524 6.23804 26.9933 6.23804Z">
+                            </path>
+                            <circle class="stroke" cx="18" cy="18" r="7" stroke="#000" stroke-width="2"></circle>
+                        </svg>
+                    </a>
+                    <a class="block" href="https://youtube.com" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="stroke" stroke="#000" stroke-width="2"
+                                d="M3.57194 3.57355L3.57355 3.57194C4.79714 2.34556 6.37314 1.68775 8.68919 1.34759C11.0392 1.00245 14.0222 1 17.9967 1C21.9712 1 24.9545 1.00243 27.3055 1.34683C29.6222 1.68621 31.2004 2.34254 32.4273 3.56622C33.6543 4.79331 34.3122 6.37149 34.6524 8.68833C34.9976 11.0391 35 14.0222 35 17.9967C35 21.9712 34.9976 24.9543 34.6524 27.3051C34.3122 29.622 33.6543 31.2002 32.4273 32.4273C31.2003 33.6542 29.6207 34.3122 27.3027 34.6524C24.9511 34.9976 21.9679 35 17.9967 35C14.0255 35 11.0424 34.9976 8.69159 34.6524C6.37446 34.3122 4.79699 33.6543 3.57355 32.4281L3.57275 32.4273C2.34581 31.2003 1.68782 29.6207 1.3476 27.3027C1.00244 24.9511 1 21.9679 1 17.9967C1 14.0255 1.00244 11.0424 1.3476 8.69159C1.68781 6.37446 2.34571 4.79699 3.57194 3.57355Z">
+                            </path>
+                            <line x1="14" y1="12" x2="26" y2="18" stroke-width="2" class="stroke" stroke="#000">
+                            </line>
+                            <line x1="14" y1="24" x2="26" y2="18" stroke-width="2" class="stroke" stroke="#000">
+                            </line>
+                            <line x1="14" y1="12" x2="14" y2="24" stroke-width="2" class="stroke" stroke="#000">
+                            </line>
+                        </svg>
+                    </a>
+                    <a class="block" href="https://whatsapp.com" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M 4.28146,4.27824 4.27824,4.28146 C 3.2586,5.29878 2.6592,6.6423 2.33699,8.83686 2.00489,11.0988 2,13.997 2,17.9967 c 0,3.9997 0.00489,6.898 0.337,9.1608 0.32222,2.1953 0.92179,3.5416 1.94285,4.5626 l 0.00162,0.0017 C 5.29878,32.7414 6.6423,33.3408 8.83686,33.663 11.0988,33.9951 13.997,34 17.9967,34 c 3.9997,0 6.898,-0.0049 9.1608,-0.337 2.1954,-0.3222 3.5416,-0.9218 4.5626,-1.9429 1.0214,-1.0213 1.6208,-2.3662 1.9429,-4.5602 C 33.9951,24.898 34,21.9998 34,17.9967 34,13.9937 33.9951,11.0955 33.663,8.8336 33.341,6.64018 32.7418,5.29538 31.7209,4.27411 30.6999,3.25577 29.3547,2.6577 27.1605,2.33627 24.8982,2.00487 21.9996,2 17.9967,2 13.9937,2 11.0955,2.00489 8.83451,2.33698 6.6413,2.6591 5.29908,3.2583 4.28146,4.27824 Z M 33.1344,2.85911 C 36,5.72475 36,10.1048 36,17.9967 c 0,7.892 0,12.272 -2.8656,15.1377 C 30.2687,36 25.8821,36 17.9967,36 10.1113,36 5.72475,36 2.86564,33.1344 0,30.2687 0,25.8821 0,17.9967 0,10.1113 0,5.72475 2.86564,2.86564 5.72475,0 10.1048,0 17.9967,0 c 7.892,0 12.272,0 15.1377,2.85911 z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="m 7.092008,17.900871 c -5.13e-4,1.929827 0.503589,3.813933 1.462109,5.474457 L 7,29.049337 12.806941,27.526764 c 1.599996,0.87251 3.401246,1.332335 5.234485,1.333092 h 0.0046 c 6.036803,0 10.951437,-4.913054 10.953962,-10.950491 0.001,-2.926204 -1.137517,-5.677483 -3.205484,-7.747218 -2.068282,-2.0697351 -4.818329,-3.2102204 -7.748478,-3.2114838 -6.038069,0 -10.951755,4.9121078 -10.954286,10.9498608 m 3.458088,5.188704 -0.216768,-0.344293 c -0.911504,-1.449162 -1.392577,-3.124021 -1.391917,-4.84359 0.002,-5.0182 4.08611,-9.1011498 9.1081,-9.1011498 2.431962,9.222e-4 4.717604,0.9490469 6.436857,2.6692158 1.719064,1.720295 2.664985,4.007171 2.664322,6.43907 -0.0023,5.018515 -4.086424,9.101781 -9.104621,9.101781 h -0.0036 C 16.408234,27.00934 14.805774,26.570708 13.408268,25.741425 L 13.07566,25.544264 9.629576,26.447749 Z m 7.496198,5.770628 h 1.08e-4 -1.08e-4 c -1.13e-4,0 -2.25e-4,0 0,0"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="m 15.30843,13.32251 c -0.205066,-0.455815 -0.42083,-0.46494 -0.61587,-0.47296 -0.159618,-0.0068 -0.342173,-0.0064 -0.524518,-0.0064 -0.182571,0 -0.479086,0.06851 -0.729826,0.342398 -0.250959,0.273906 -0.958043,0.936007 -0.958043,2.282582 0,1.346701 0.980903,2.647934 1.117559,2.830721 0.136897,0.182455 1.893519,3.034254 4.675299,4.131261 2.312104,0.911725 2.7826,0.73039 3.28442,0.684702 0.50182,-0.04556 1.619382,-0.661874 1.847384,-1.301013 0.228126,-0.639044 0.228126,-1.186837 0.159732,-1.301233 -0.0684,-0.114064 -0.250961,-0.18257 -0.524649,-0.319349 -0.273796,-0.136896 -1.619382,-0.799098 -1.870213,-0.890444 -0.250961,-0.09123 -0.433429,-0.136789 -0.615995,0.137231 -0.182458,0.273682 -0.706648,0.890002 -0.866385,1.072568 -0.159618,0.182901 -0.319349,0.205736 -0.593041,0.06884 -0.273794,-0.137341 -1.155322,-0.426072 -2.201054,-1.358385 -0.813682,-0.725465 -1.36296,-1.621371 -1.522697,-1.89541 -0.159623,-0.273682 -0.01706,-0.421935 0.120191,-0.558402 0.122972,-0.12264 0.273794,-0.319569 0.410691,-0.479307 0.136564,-0.159841 0.182124,-0.273905 0.273353,-0.456478 0.09134,-0.18268 0.04565,-0.342525 -0.02275,-0.479433 -0.0685,-0.136896 -0.600398,-1.490399 -0.843775,-2.031624"
+                                fill="#000" fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a class="block" href="https://viber.com" target="_blank">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.28146 4.27824L4.27824 4.28146C3.2586 5.29878 2.6592 6.6423 2.33699 8.83686C2.00489 11.0988 2 13.997 2 17.9967C2 21.9964 2.00489 24.8947 2.337 27.1575C2.65922 29.3528 3.25879 30.6991 4.27985 31.7201L4.28147 31.7218C5.29878 32.7414 6.6423 33.3408 8.83686 33.663C11.0988 33.9951 13.997 34 17.9967 34C21.9964 34 24.8947 33.9951 27.1575 33.663C29.3529 33.3408 30.6991 32.7412 31.7201 31.7201C32.7415 30.6988 33.3409 29.3539 33.663 27.1599C33.9951 24.898 34 21.9998 34 17.9967C34 13.9937 33.9951 11.0955 33.663 8.8336C33.341 6.64018 32.7418 5.29538 31.7209 4.27411C30.6999 3.25577 29.3547 2.6577 27.1605 2.33627C24.8982 2.00487 21.9996 2 17.9967 2C13.9937 2 11.0955 2.00489 8.83451 2.33698C6.6413 2.6591 5.29908 3.2583 4.28146 4.27824ZM33.1344 2.85911C36 5.72475 36 10.1048 36 17.9967C36 25.8887 36 30.2687 33.1344 33.1344C30.2687 36 25.8821 36 17.9967 36C10.1113 36 5.72475 36 2.86564 33.1344C0 30.2687 0 25.8821 0 17.9967C0 10.1113 0 5.72475 2.86564 2.86564C5.72475 0 10.1048 0 17.9967 0C25.8887 0 30.2687 0 33.1344 2.85911Z"
+                                fill="#000"></path>
+                            <path class="fill" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.28146 4.27824L4.27824 4.28146C3.2586 5.29878 2.6592 6.6423 2.33699 8.83686C2.00489 11.0988 2 13.997 2 17.9967C2 21.9964 2.00489 24.8947 2.337 27.1575C2.65922 29.3528 3.25879 30.6991 4.27985 31.7201L4.28147 31.7218C5.29878 32.7414 6.6423 33.3408 8.83686 33.663C11.0988 33.9951 13.997 34 17.9967 34C21.9964 34 24.8947 33.9951 27.1575 33.663C29.3529 33.3408 30.6991 32.7412 31.7201 31.7201C32.7415 30.6988 33.3409 29.3539 33.663 27.1599C33.9951 24.898 34 21.9998 34 17.9967C34 13.9937 33.9951 11.0955 33.663 8.8336C33.341 6.64018 32.7418 5.29538 31.7209 4.27411C30.6999 3.25577 29.3547 2.6577 27.1605 2.33627C24.8982 2.00487 21.9996 2 17.9967 2C13.9937 2 11.0955 2.00489 8.83451 2.33698C6.6413 2.6591 5.29908 3.2583 4.28146 4.27824ZM33.1344 2.85911C36 5.72475 36 10.1048 36 17.9967C36 25.8887 36 30.2687 33.1344 33.1344C30.2687 36 25.8821 36 17.9967 36C10.1113 36 5.72475 36 2.86564 33.1344C0 30.2687 0 25.8821 0 17.9967C0 10.1113 0 5.72475 2.86564 2.86564C5.72475 0 10.1048 0 17.9967 0C25.8887 0 30.2687 0 33.1344 2.85911Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M29.1551 19.893C29.8711 13.866 28.8111 10.061 26.8991 8.34002L26.9001 8.33902C23.8141 5.40002 13.3921 4.96502 9.70008 8.47102C8.04208 10.186 7.45808 12.703 7.39408 15.819C7.33008 18.936 7.25408 24.775 12.6951 26.359H12.7001L12.6951 28.778C12.6951 28.778 12.6581 29.758 13.2841 29.955C14.0001 30.187 14.3241 29.732 16.5511 27.072C20.2751 27.395 23.1351 26.655 23.4601 26.547C24.2121 26.295 28.4671 25.732 29.1551 19.893ZM16.9181 25.37C16.9181 25.37 14.5611 28.309 13.8281 29.072C13.5881 29.32 13.3251 29.297 13.3291 28.805C13.3291 28.482 13.3471 24.789 13.3471 24.789C8.73408 23.467 9.00608 18.495 9.05608 15.894C9.10608 13.292 9.58208 11.161 10.9861 9.72602C14.2251 6.68902 23.3621 7.36802 25.6901 9.55602C28.5361 12.079 27.5231 19.207 27.5291 19.45C26.9441 24.324 23.4961 24.633 22.8621 24.844C22.5911 24.934 20.0761 25.581 16.9181 25.37V25.37Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M29.1551 19.893C29.8711 13.866 28.8111 10.061 26.8991 8.34002L26.9001 8.33902C23.8141 5.40002 13.3921 4.96502 9.70008 8.47102C8.04208 10.186 7.45808 12.703 7.39408 15.819C7.33008 18.936 7.25408 24.775 12.6951 26.359H12.7001L12.6951 28.778C12.6951 28.778 12.6581 29.758 13.2841 29.955C14.0001 30.187 14.3241 29.732 16.5511 27.072C20.2751 27.395 23.1351 26.655 23.4601 26.547C24.2121 26.295 28.4671 25.732 29.1551 19.893ZM16.9181 25.37C16.9181 25.37 14.5611 28.309 13.8281 29.072C13.5881 29.32 13.3251 29.297 13.3291 28.805C13.3291 28.482 13.3471 24.789 13.3471 24.789C8.73408 23.467 9.00608 18.495 9.05608 15.894C9.10608 13.292 9.58208 11.161 10.9861 9.72602C14.2251 6.68902 23.3621 7.36802 25.6901 9.55602C28.5361 12.079 27.5231 19.207 27.5291 19.45C26.9441 24.324 23.4961 24.633 22.8621 24.844C22.5911 24.934 20.0761 25.581 16.9181 25.37V25.37Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M18.2214 10.2969C17.8364 10.2969 17.8364 10.8969 18.2214 10.9019C21.2084 10.9249 23.6684 13.0069 23.6954 16.8259C23.6954 17.2289 24.2854 17.2239 24.2804 16.8209H24.2794C24.2474 12.7059 21.5614 10.3199 18.2214 10.2969V10.2969Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M18.2214 10.2969C17.8364 10.2969 17.8364 10.8969 18.2214 10.9019C21.2084 10.9249 23.6684 13.0069 23.6954 16.8259C23.6954 17.2289 24.2854 17.2239 24.2804 16.8209H24.2794C24.2474 12.7059 21.5614 10.3199 18.2214 10.2969V10.2969Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M22.151 16.193C22.142 16.591 22.731 16.61 22.736 16.207C22.785 13.938 21.3859 12.069 18.7569 11.872C18.3719 11.844 18.3319 12.449 18.7159 12.477C20.9959 12.65 22.197 14.206 22.151 16.193V16.193Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M22.151 16.193C22.142 16.591 22.731 16.61 22.736 16.207C22.785 13.938 21.3859 12.069 18.7569 11.872C18.3719 11.844 18.3319 12.449 18.7159 12.477C20.9959 12.65 22.197 14.206 22.151 16.193V16.193Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M21.5212 18.7741C21.0272 18.4881 20.5242 18.6661 20.3162 18.9471L19.8812 19.5101C19.6602 19.7961 19.2472 19.7581 19.2472 19.7581C16.2332 18.9611 15.4272 15.8071 15.4272 15.8071C15.4272 15.8071 15.3902 15.3801 15.6662 15.1511L16.2102 14.7011C16.4822 14.4851 16.6542 13.9651 16.3772 13.4541C15.6372 12.1171 15.1402 11.6561 14.8872 11.3021C14.6212 10.9691 14.2212 10.8941 13.8052 11.1191H13.7962C12.9312 11.6251 11.9842 12.5721 12.2872 13.5471C12.8042 14.5751 13.7542 17.8521 16.7822 20.3281C18.2052 21.4991 20.4572 22.6991 21.4132 22.9761L21.4222 22.9901C22.3642 23.3041 23.2802 22.3201 23.7692 21.4291V21.4221C23.9862 20.9911 23.9142 20.5831 23.5972 20.3161C23.0352 19.7681 22.1872 19.1631 21.5212 18.7741Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M21.5212 18.7741C21.0272 18.4881 20.5242 18.6661 20.3162 18.9471L19.8812 19.5101C19.6602 19.7961 19.2472 19.7581 19.2472 19.7581C16.2332 18.9611 15.4272 15.8071 15.4272 15.8071C15.4272 15.8071 15.3902 15.3801 15.6662 15.1511L16.2102 14.7011C16.4822 14.4851 16.6542 13.9651 16.3772 13.4541C15.6372 12.1171 15.1402 11.6561 14.8872 11.3021C14.6212 10.9691 14.2212 10.8941 13.8052 11.1191H13.7962C12.9312 11.6251 11.9842 12.5721 12.2872 13.5471C12.8042 14.5751 13.7542 17.8521 16.7822 20.3281C18.2052 21.4991 20.4572 22.6991 21.4132 22.9761L21.4222 22.9901C22.3642 23.3041 23.2802 22.3201 23.7692 21.4291V21.4221C23.9862 20.9911 23.9142 20.5831 23.5972 20.3161C23.0352 19.7681 22.1872 19.1631 21.5212 18.7741Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M19.1684 14.1039C20.1294 14.1599 20.5954 14.6619 20.6454 15.6929C20.6634 16.0959 21.2484 16.0679 21.2304 15.6649C21.1664 14.3189 20.4644 13.5689 19.2004 13.4989C18.8154 13.4759 18.7794 14.0809 19.1684 14.1039V14.1039Z"
+                                fill="#000"></path>
+                            <path class="fill"
+                                d="M19.1684 14.1039C20.1294 14.1599 20.5954 14.6619 20.6454 15.6929C20.6634 16.0959 21.2484 16.0679 21.2304 15.6649C21.1664 14.3189 20.4644 13.5689 19.2004 13.4989C18.8154 13.4759 18.7794 14.0809 19.1684 14.1039V14.1039Z"
+                                fill="#000"></path>
+                        </svg>
+                    </a>
+                </div>
+                <h3 class="text-medium text-center mb-4">Наша громада у смартфоні:</h3>
+                <div class="flex gap-4">
+                    <a href="viber-link" target="_blank" class="hover:text-colored flex flex-col gap-2">
+                        <img class="w-20 h-20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1qAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFbElEQVR4nO3dzW7cNhhA0dro+z+y0UWyKDANILD8m7nnrO2RYt8IMEF9/Pr5+fkLGr5P3wDsI3dC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkT8vfcj/v+Pvn/58lEtNc7XDdH7clP4/Xqs36GTz557Ce209zfjqc7IXInRO6EyJ0QuRMyeWXm1dl1j7FVhbEVlbGvmbV6M3Y/sz5nltWrQJ7uhMidELkTIndC5E7I8pWZV2N/fY+tBjxZi5i1DvNklWPdjp3brv7E/lMfPd0JkTshcidE7oTInZADKzM77Xyf6LZdK2N7ivavluzk6U6I3AmROyFyJ0TuhHz4ysy6vS6z7mfdG08798y8C093QuROiNwJkTshcifkwMrMztWAWWsR69Zqxq7+xM51mHdZ4fF0J0TuhMidELkTIndClq/MnD3ZZ5ZZU1x2fs0T73ha0//xrvcNA+ROiNwJkTshcifk6112O5w1a0rw2LV2vl312TzdCZE7IXInRO6EyJ2QyXtm1u2m2Pk+0axZvmPXmrVDZt133bbz5zlPd0LkTojcCZE7IXInZPKemXVnId1/bvUsZyfYfPbJ2p7uhMidELkTIndC5E7I8jkzt81IGfvkVztPfdp5rvcTs076tmcGFpI7IXInRO6EyJ2QySsz6945Wjerdt06zJOv2Xle0rqTqp64YW7w+TuAbeROiNwJkTshcidk+dtMZyeijH3Xul09T6xbq1l3P7N2/tgzA9PInRC5EyJ3QuROyIGzmdadK7RzreaJsydQv8tU3p1X93QnRO6EyJ0QuRMid0IOnM10drVkzNjVZ81jGftk6zD/ccWlnw5XkTshcidE7oTInZDle2bOvqn0at17SZ965tRn/Ct+f/7Ez4LLyZ0QuRMid0LkTsgVbzOtO5vp7LXGnF3lWHee1A083QmROyFyJ0TuhMidkOUTgMd8xsTdJ26bMzPLzr1Sz3m6EyJ3QuROiNwJkTshy0/NfmLn2dZjnzx2rZ33PDbB5uwOGXNmYCG5EyJ3QuROiNwJWT4BeN3OjZ17Xc6esvTErKuP/QZvm9j8J+fvALaROyFyJ0TuhMidkMkrM2PG/ma/bdrJ2Qk2t5279MrbTLCV3AmROyFyJ0TuhCxfmTk7b2TduUJPnL3ns+8u3bYu9IunOyFyJ0TuhMidELkTsnxlZta6x85pMK/fNbaCcXZXz9l5v2PfZc4MTCN3QuROiNwJkTshB95mum3FYN0s33X/0nVTZV7N2nuzcwbRn3i6EyJ3QuROiNwJkTshV8yZGbPzfKJZn7NuF826ibvrdgfZMwMLyZ0QuRMid0LkTsjXDdM/1rltSvCsqTuvzp5bve5sJntmYJDcCZE7IXInRO6ELD81e6d1E3fHrnX2fPCd52jPYs8MTCN3QuROiNwJkTshV0wAHrNzRsq6OcbrJs+c3bVy5/tNnu6EyJ0QuRMid0LkTsgVE4CfOLtv5IlZ5zfNmk4za07vmDvfkvN0J0TuhMidELkTIndC3ngC8Cw7d5usOx9858nj6+5wtfN3ANvInRC5EyJ3QuROSG5lZufJRzsn2IyZddr1q9tmL//i6U6I3AmROyFyJ0TuhBxYmTn7nsvOdYZZ19o5N/i2s5nmOn8HsI3cCZE7IXInRO6ELF+ZueHv8X+btX5ydh1m576aWVffP+/31V0twlJyJ0TuhMidELkT8nXnpFZYwdOdELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidkH8ADHb721ZQOc8AAAAASUVORK5CYII=" alt="">
+                        <p class="text-regular">Viber</p>
+                    </a>
+                    <a href="telegram-link" target="_blank" class="hover:text-colored flex flex-col gap-2">
+                        <img class="w-20 h-20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAIAAAAHjs1qAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFbElEQVR4nO3dzW7cNhhA0dro+z+y0UWyKDANILD8m7nnrO2RYt8IMEF9/Pr5+fkLGr5P3wDsI3dC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkT8vfcj/v+Pvn/58lEtNc7XDdH7clP4/Xqs36GTz557Ce209zfjqc7IXInRO6EyJ0QuRMyeWXm1dl1j7FVhbEVlbGvmbV6M3Y/sz5nltWrQJ7uhMidELkTIndC5E7I8pWZV2N/fY+tBjxZi5i1DvNklWPdjp3brv7E/lMfPd0JkTshcidE7oTInZADKzM77Xyf6LZdK2N7ivavluzk6U6I3AmROyFyJ0TuhHz4ysy6vS6z7mfdG08798y8C093QuROiNwJkTshcifkwMrMztWAWWsR69Zqxq7+xM51mHdZ4fF0J0TuhMidELkTIndClq/MnD3ZZ5ZZU1x2fs0T73ha0//xrvcNA+ROiNwJkTshcifk6112O5w1a0rw2LV2vl312TzdCZE7IXInRO6EyJ2QyXtm1u2m2Pk+0axZvmPXmrVDZt133bbz5zlPd0LkTojcCZE7IXInZPKemXVnId1/bvUsZyfYfPbJ2p7uhMidELkTIndC5E7I8jkzt81IGfvkVztPfdp5rvcTs076tmcGFpI7IXInRO6EyJ2QySsz6945Wjerdt06zJOv2Xle0rqTqp64YW7w+TuAbeROiNwJkTshcidk+dtMZyeijH3Xul09T6xbq1l3P7N2/tgzA9PInRC5EyJ3QuROyIGzmdadK7RzreaJsydQv8tU3p1X93QnRO6EyJ0QuRMid0IOnM10drVkzNjVZ81jGftk6zD/ccWlnw5XkTshcidE7oTInZDle2bOvqn0at17SZ965tRn/Ct+f/7Ez4LLyZ0QuRMid0LkTsgVbzOtO5vp7LXGnF3lWHee1A083QmROyFyJ0TuhMidkOUTgMd8xsTdJ26bMzPLzr1Sz3m6EyJ3QuROiNwJkTshy0/NfmLn2dZjnzx2rZ33PDbB5uwOGXNmYCG5EyJ3QuROiNwJWT4BeN3OjZ17Xc6esvTErKuP/QZvm9j8J+fvALaROyFyJ0TuhMidkMkrM2PG/ma/bdrJ2Qk2t5279MrbTLCV3AmROyFyJ0TuhCxfmTk7b2TduUJPnL3ns+8u3bYu9IunOyFyJ0TuhMidELkTsnxlZta6x85pMK/fNbaCcXZXz9l5v2PfZc4MTCN3QuROiNwJkTshB95mum3FYN0s33X/0nVTZV7N2nuzcwbRn3i6EyJ3QuROiNwJkTshV8yZGbPzfKJZn7NuF826ibvrdgfZMwMLyZ0QuRMid0LkTsjXDdM/1rltSvCsqTuvzp5bve5sJntmYJDcCZE7IXInRO6ELD81e6d1E3fHrnX2fPCd52jPYs8MTCN3QuROiNwJkTshV0wAHrNzRsq6OcbrJs+c3bVy5/tNnu6EyJ0QuRMid0LkTsgVE4CfOLtv5IlZ5zfNmk4za07vmDvfkvN0J0TuhMidELkTIndC3ngC8Cw7d5usOx9858nj6+5wtfN3ANvInRC5EyJ3QuROSG5lZufJRzsn2IyZddr1q9tmL//i6U6I3AmROyFyJ0TuhBxYmTn7nsvOdYZZ19o5N/i2s5nmOn8HsI3cCZE7IXInRO6ELF+ZueHv8X+btX5ydh1m576aWVffP+/31V0twlJyJ0TuhMidELkT8nXnpFZYwdOdELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidELkTIndC5E6I3AmROyFyJ0TuhMidkH8ADHb721ZQOc8AAAAASUVORK5CYII=" alt="">
+                        <p class="text-regular">Telegram</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex mt-4 justify-end">
+            <p class="text-small font-normal copyright-year">toolkit.in.ua 2025. Всі права захищені.</p>
+        </div>
     </footer>
-</body>
-
+</body>
 
 </html>
