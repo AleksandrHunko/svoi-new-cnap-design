@@ -65,8 +65,8 @@
                     <div class="flex flex-col sm:w-[47%] lg:w-[20%]">
                     </div>
                     <div class="flex flex-col sm:w-[47%] lg:w-[20%] lg:justify-end">
-                        <a class="button-transparent mb-2" href="tel:">Гаряча лінія <img
-                                src="./img/material-design/tel.svg" alt=""></a>
+                        <a class="button-transparent text-center mb-2" href="tel:">
+                            Гаряча лінія<img class="ml-2 -mt-1 inline-block w-5 h-5" src="./img/material-design/telephone.svg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -424,11 +424,11 @@
             </div>
         </section>
         <section class="section-wrapper">
-            <div class="flex gap-2">
+            <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
                 <div class="flex-1">
-                    <h2 class="text-biggest mb-12">Директор департаменту</h2>
-                    <div class="flex gap-4 justify-between">
-                        <img class="w-full flex-1 aspect-square object-cover rounded-2xl" src="./img/photo-1.jpg" alt="">
+                    <h2 class="text-biggest mb-12">Директор<br>департаменту</h2>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                        <img class="w-full max-w-[360px] lg:max-w-none h-auto flex-1 aspect-square object-cover rounded-2xl" src="./img/photo-1.jpg" alt="">
                         <div class="flex flex-col justify-between flex-1">
                             <h3 class="text-big mb-6">Наталія Середюк</h3>
                             <p class="text-regular mb-4">69105, Запоріжжя, проспект Соборний, 206</p>
@@ -438,18 +438,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-1">
-                    <div class="grid grid-cols-2 gap-2">
-                        <a href="./cherga"
-                            class="bg-colored hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
-                            <img class="py-3" src="./img/material-design/qr.svg" alt="">
-                            <p class="text-sm md:text-base">Записатися в чергу</p>
-                        </a>
-                        <a href="./cherga"
-                            class="bg-colored hover:bg-colored cursor-pointer flex flex-col justify-between items-center h-[138px] w-[48%] md:w-[250px] rounded-3xl bg-white text-black px-3 py-4">
-                            <img class="py-3" src="./img/material-design/briefcase.svg" alt="">
-                            <p class="text-sm md:text-base">Електронна валіза</p>
-                        </a>
+                <div class="flex-1 grid grid-cols-2 gap-2">
+                    <a href="" class="relative bg-colored hover:bg-colored cursor-pointer flex flex-col justify-center items-center gap-8 aspect-2/1 md:aspect-square w-full rounded-3xl p-6">
+                        <img class="w-24 h-24 lg:w-28 lg:h-28" src="./img/material-design/qr.svg" alt="">
+                        <p class="text-medium">Записатися в чергу</p>
+                        <img class="hidden lg:block absolute bottom-4 right-4 w-8 h-8" src="./img/material-design/arrow.svg" alt="">
+                    </a>
+                    <a href="" class="relative bg-colored hover:bg-colored cursor-pointer flex flex-col justify-center items-center gap-8 aspect-2/1 md:aspect-square w-full rounded-3xl p-6">
+                        <img class="w-24 h-24 lg:w-28 lg:h-28" src="./img/material-design/briefcase.svg" alt="">
+                        <p class="text-medium">Електронна валіза</p>
+                        <img class="hidden lg:block absolute bottom-4 right-4 w-8 h-8" src="./img/material-design/arrow.svg" alt="">
+                    </a>
+                    <div class="relative flex flex-col items-center justify-between gap-4 bg-colored w-full md:h-full md:col-start-2 md:row-start-1 md:row-span-2 col-span-2 rounded-3xl px-4 py-8 lg:px-6 lg:py-12">
+                        <h3 class="text-medium">Оцініть роботу</h3>
+                        <p class="text-small text-center font-normal">Що б залишити відгук перейдіть за посиланням або наведіть камерою смартфона на QR-код</p>
+                        <img class="w-2/3 h-auto" src="./img/qr-sample.png" alt="">
+                        <a class="button-transparent w-full text-center" href="">Оцінити</a>
                     </div>
                 </div>
             </div>
@@ -540,7 +544,6 @@
                 });
                 lightbox.init();
             </script>
-            <link rel="stylesheet" href="./src/photoswipe.css">
             <div id="galleryContainer"
                 class="grid grid-rows-1 md:grid-rows-2 grid-flow-col auto-cols-[calc(50%)] lg:auto-cols-[calc(33.333%)] gap-4 overflow-x-auto scroll-smooth snap-x scrollbar-hide pr-1">
                 <a class="snap-start" href="./img/cabinet-1.png" data-pswp-width="1280" data-pswp-height="720">
@@ -598,6 +601,99 @@
                 <span class="w-4 h-4 bg-black cursor-pointer"></span>
                 <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
                 <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <div class="flex justify-between items-end w-full mb-6">
+                <h2 class="text-biggest">Публічна інформація</h2>
+                <a class="button-transparent" href="" target="_blank">Вся публічна інформація</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="" class="relative w-full hover:text-colored">
+                    <p class="bg-colored-80 text-small font-light text-center rounded-xl py-1 px-2 w-30">11.04.2025 </p>
+                    <h3 class="w-full text-big border-t-2 mt-2 pt-4 pr-8 md:pr-0">Інформація про організаційну структуру Департаменту містобудування та архітектури»</h3>
+                    <img class="md:hidden absolute bottom-0 right-2" src="./img/material-design/link.svg" alt="">
+                </a>
+                <a href="" class="relative w-full hover:text-colored">
+                    <p class="bg-colored-80 text-small font-light text-center rounded-xl py-1 px-2 w-30">11.04.2025 </p>
+                    <h3 class="w-full text-big border-t-2 mt-2 pt-4 pr-8 md:pr-0">Сайт КМУ</h3>
+                    <img class="md:hidden absolute bottom-0 right-2" src="./img/material-design/link.svg" alt="">
+                </a>
+                <a href="" class="relative w-full hover:text-colored">
+                    <p class="bg-colored-80 text-small font-light text-center rounded-xl py-1 px-2 w-30">11.04.2025 </p>
+                    <h3 class="w-full text-big border-t-2 mt-2 pt-4 pr-8 md:pr-0">Інформація про організаційну структуру Департаменту містобудування та архітектури»</h3>
+                    <img class="md:hidden absolute bottom-0 right-2" src="./img/material-design/link.svg" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <div class="flex justify-between items-end w-full mb-6">
+                <h2 class="text-biggest">Мапа</h2>
+                <div class="slider-control-arrows flex gap-8" data-target="department-slider">
+                    <svg fill="#959595" width="18" height="29" viewBox="0 0 18 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.1776 28.3551L0 14.1775L14.1776 0L17.1551 3.01642L5.99398 14.1775L17.1551 25.3387L14.1776 28.3551Z" />
+                    </svg>
+                    <svg class="cursor-pointer" fill="black" width="18" height="29" viewBox="0 0 18 29" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-4 flex flex-col-reverse lg:flex-row items-center gap-4">
+                <div class="w-full lg:w-[59%]">
+                    <img class="w-full h-[300px] md:h-[500px]" src="./img/map-placeholder.png" alt="">
+                </div>
+                <div class="w-[80%] lg:w-[39%] mb-4">
+                    <div id="department-slider" class="relative flex gap-4 justify-start overflow-x-auto snap-x scroll-smooth scrollbar-hide">
+                        <div class="w-full flex flex-col shrink-0 snap-start">
+                            <h3 class="text-big mb-4">Департамент «Центр надання адміністративних послуг у місті Луцьку» Луцької міської ради</h3>
+                            <p class="text-small pb-8 border-b-2 mb-12">Луцьк, вулиця Лесі Українки, 35</p>
+                            <div class="flex w-full justify-between gap-2 mb-8">
+                                <p class="text-medium">Телефон:</p>
+                                <p class="text-medium">+380332777888</p>
+                            </div>
+                            <div class="flex w-full justify-between items-end gap-2 mb-12">
+                                <p class="text-medium">Ел. Пошта:</p>
+                                <p class="text-medium">cnap@lutskrada.gov.ua</p>
+                            </div>
+                            <a class="button-black text-center w-64 mx-auto" href="">Детальніше</a>
+                        </div>
+                        <div class="w-full flex flex-col shrink-0 snap-start">
+                            <h3 class="text-big mb-4">Департамент «Центр надання адміністративних послуг у місті Луцьку» Луцької міської ради</h3>
+                            <p class="text-small pb-8 border-b-2 mb-12">Луцьк, вулиця Лесі Українки, 35</p>
+                            <div class="flex w-full justify-between gap-2 mb-8">
+                                <p class="text-medium">Телефон:</p>
+                                <p class="text-medium">+380332777888</p>
+                            </div>
+                            <div class="flex w-full justify-between items-end gap-2 mb-12">
+                                <p class="text-medium">Ел. Пошта:</p>
+                                <p class="text-medium">cnap@lutskrada.gov.ua</p>
+                            </div>
+                            <a class="button-black text-center w-64 mx-auto" href="">Детальніше</a>
+                        </div>
+                        <div class="w-full flex flex-col shrink-0 snap-start">
+                            <h3 class="text-big mb-4">Департамент «Центр надання адміністративних послуг у місті Луцьку» Луцької міської ради</h3>
+                            <p class="text-small pb-8 border-b-2 mb-12">Луцьк, вулиця Лесі Українки, 35</p>
+                            <div class="flex w-full justify-between gap-2 mb-8">
+                                <p class="text-medium">Телефон:</p>
+                                <p class="text-medium">+380332777888</p>
+                            </div>
+                            <div class="flex w-full justify-between items-end gap-2 mb-12">
+                                <p class="text-medium">Ел. Пошта:</p>
+                                <p class="text-medium">cnap@lutskrada.gov.ua</p>
+                            </div>
+                            <a class="button-black text-center w-64 mx-auto" href="">Детальніше</a>
+                        </div>
+                    </div>
+                    <div class="slider-control-dots flex w-full justify-center gap-1 mt-4" data-target="department-slider">
+                        <span class="w-4 h-4 bg-black cursor-pointer"></span>
+                        <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
+                        <span class="w-4 h-4 bg-(--theme-bg-80) cursor-pointer"></span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
