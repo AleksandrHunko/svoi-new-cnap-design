@@ -125,9 +125,10 @@ export function initSliders() {
     arrows[1].addEventListener('click', () => {
       const current = getCurrentIndex(container, items);
       let next = Math.min(current + 1, items.length - 1);
+
       // check if next is in the same column, choose another one if so
       while (items[next].offsetLeft == items[current].offsetLeft && next < items.length - 1) next++
-
+      
       items[next].scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
     });
 
