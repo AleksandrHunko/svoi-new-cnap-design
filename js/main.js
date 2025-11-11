@@ -4,6 +4,8 @@ import { validateInputs } from './validate-inputs.js';
 import { initSliders } from './slider-control.js'
 import { galleryInit } from './gallery.js';
 
+import { filterMenuInit } from './filter-menu.js'
+
 
 window.addEventListener('load', () => {
   initNav();
@@ -15,6 +17,7 @@ window.addEventListener('load', () => {
 
   initSliders();
 
-  galleryInit()
+  galleryInit();
+  filterMenuInit();
   document.querySelector('.copyright-year').innerHTML = `toolkit.in.ua ${new Date().getFullYear()}. Всі права захищені.`
 });
