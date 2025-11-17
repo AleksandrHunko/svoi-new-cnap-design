@@ -5,6 +5,7 @@ import { initSliders } from './slider-control.js'
 import { galleryInit } from './gallery.js';
 
 import { filterMenuInit } from './filter-menu.js'
+import { initAccordionMenu } from './misc-elements.js'
 
 
 window.addEventListener('load', () => {
@@ -19,5 +20,7 @@ window.addEventListener('load', () => {
 
   galleryInit();
   filterMenuInit();
+  initAccordionMenu();
+
   document.querySelector('.copyright-year').innerHTML = `toolkit.in.ua ${new Date().getFullYear()}. Всі права захищені.`
 });
