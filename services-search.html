@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+</head>
+
+<body class="w-full color-style-9">
+    <main>
+        <div class="flex gap-2 mt-4 px-4 lg:px-[6%] xl:px-[8%] 2xl:px-[10%]">
+            <a class="hover:text-colored text-small text-[#959595] font-normal" href="/">Головна</a>
+            <svg class="w-2 h-4" class="cursor-pointer" fill="#959595" width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+            </svg>
+            <a class="hover:text-colored text-small text-[#959595] font-normal" href="/services">Послуги</a>
+            <svg class="w-2 h-4" class="cursor-pointer" fill="#959595" width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+            </svg>
+            <p class="text-small font-normal">Пошук</p>
+        </div>
+        <section class="bg-colored mt-8">
+            <div class="section-wrapper">
+                <h1 class="text-biggest mb-16">Знайти послугу</h1>
+                <form action="">
+                    <div class="flex flex-wrap gap-2 justify-between items-start md:items-center w-full">
+                        <div class="relative w-3/4 sm:w-2/3 lg:w-lg">
+                            <input class="px-4 py-2 w-full bg-white border-2 rounded-3xl text-base" name="search" type="text"
+                                placeholder="Назва послуги">
+                            <img class="absolute bottom-3 right-3 w-5 h-5" src="/img/material-design/search.svg" alt="">
+                        </div>
+                        <input type="checkbox" id="filter-toggle" class="peer hidden" />
+                        <label for="filter-toggle" id="filter-button" role="button" aria-haspopup="true"
+                            class="cursor-pointer">
+                            <svg class="filter-closed cursor-pointer md:hidden" width="37" height="33" viewBox="0 0 37 33"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="stroke"
+                                    d="M1.66699 4.33268C1.66699 3.39926 1.66699 2.93255 1.84865 2.57603C2.00844 2.26243 2.2634 2.00746 2.57701 1.84767C2.93353 1.66602 3.40024 1.66602 4.33366 1.66602H32.3337C33.2671 1.66602 33.7338 1.66602 34.0903 1.84767C34.4039 2.00746 34.6589 2.26243 34.8187 2.57603C35.0003 2.93255 35.0003 3.39926 35.0003 4.33268V5.44834C35.0003 5.89633 35.0003 6.12033 34.9456 6.32862C34.8971 6.5132 34.8172 6.68807 34.7095 6.84562C34.588 7.0234 34.4187 7.1701 34.0801 7.46351L23.4205 16.7019C23.082 16.9953 22.9127 17.142 22.7911 17.3197C22.6834 17.4773 22.6036 17.6522 22.5551 17.8367C22.5003 18.045 22.5003 18.269 22.5003 18.717V27.43C22.5003 27.7559 22.5003 27.9189 22.4478 28.0598C22.4013 28.1843 22.3258 28.2959 22.2274 28.3852C22.1161 28.4864 21.9648 28.5469 21.6622 28.6679L15.9955 30.9346C15.3829 31.1796 15.0767 31.3022 14.8308 31.2511C14.6158 31.2064 14.4271 31.0786 14.3057 30.8956C14.167 30.6863 14.167 30.3564 14.167 29.6966V18.717C14.167 18.269 14.167 18.045 14.1122 17.8367C14.0637 17.6522 13.9839 17.4773 13.8762 17.3197C13.7546 17.142 13.5854 16.9953 13.2468 16.7019L2.58718 7.46351C2.24863 7.1701 2.07936 7.0234 1.95781 6.84562C1.8501 6.68807 1.77025 6.5132 1.72174 6.32862C1.66699 6.12033 1.66699 5.89633 1.66699 5.44834V4.33268Z"
+                                    stroke="black" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="filter-open hidden cursor-pointer md:hidden" width="27" height="27"
+                                viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill"
+                                    d="M24.017 26.4289L13.2144 15.6093L2.41189 26.4289L0 24.017L10.8195 13.2144L0 2.41189L2.41189 0L13.2144 10.8195L24.017 0.0169855L26.4119 2.41189L15.6093 13.2144L26.4119 24.017L24.017 26.4289Z"
+                                    fill="black" />
+                            </svg>
+                        </label>
+                        <div class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-4 w-full md:w-auto">
+                            
+                            <button class="hidden md:block button-black text-regular cursor-pointer px-10"
+                                type="submit">Застосувати</button>
+                        </div>
+                        <div class="hidden peer-checked:flex md:flex flex-wrap gap-8 mt-8 w-full">
+                            <div class="relative w-full border-b-2 pb-4 md:w-auto md:border-b-0 md:pb-0">
+                                <select class="appearance-none cursor-pointer w-full pr-6 text-custom-20px focus:outline-none">
+                                    <option disabled selected>Категорія послуги</option>
+                                    <option>Категорія 1</option>
+                                    <option>Категорія 2</option>
+                                    <option>Категорія 3</option>
+                                    <option>Категорія 4</option>
+                                </select>
+                                <svg
+                                  class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                                  width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true">
+                                  <path d="M0 0h10L5 6z"></path>
+                                </svg>
+                            </div>
+                            <div class="triangle-icon-context-menu relative w-full md:w-auto pb-4 md:pb-0 border-b-2 md:border-none">
+                                <input type="checkbox" id="thematic-area-toggle" class="peer hidden" />
+                                <label for="thematic-area-toggle" id="thematic-area-menu-button" role="button" aria-haspopup="true"
+                                    class="block relative w-full hover:text-colored cursor-pointer">
+                                    <span class="text-custom-20px pr-6">Тематична область</span>
+                                    <svg
+                                  class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                                  width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true">
+                                  <path d="M0 0h10L5 6z"></path>
+                                </svg>
+                                </label>
+                                <div class="md:absolute md:right-0 mt-2 md:w-64 md:bg-white md:border md:border-gray-100 md:rounded-lg md:shadow-md hidden peer-checked:block z-10"
+                                    role="menu" aria-labelledby="thematic-area-menu-button">
+                                    <fieldset class="p-2" role="group" aria-label="Тематична область">
+                                        <legend class="sr-only">Тематична область</legend>
+                                        <label
+                                            class="flex flex-row-reverse md:flex-row w-full justify-between md:justify-start items-center gap-2 px-4 py-2 hover:bg-colored md:hover:bg-gray-100 md:rounded cursor-pointer">
+                                            <input type="checkbox" name="thematic-area" value="2023" class="w-4 h-4">
+                                            <span class="text-[16px]/[24px]">Земля та екологія</span>
+                                        </label>
+                                        <label
+                                            class="flex flex-row-reverse md:flex-row w-full justify-between md:justify-start items-center gap-2 px-4 py-2 hover:bg-colored md:hover:bg-gray-100 md:rounded cursor-pointer">
+                                            <input type="checkbox" name="thematic-area" value="2024" class="w-4 h-4">
+                                            <span class="text-[16px]/[24px]">Громадянство та міграція</span>
+                                        </label>
+                                        <label
+                                            class="flex flex-row-reverse md:flex-row w-full justify-between md:justify-start items-center gap-2 px-4 py-2 hover:bg-colored md:hover:bg-gray-100 md:rounded cursor-pointer">
+                                            <input type="checkbox" name="thematic-area" value="2025" class="w-4 h-4">
+                                            <span class="text-[16px]/[24px]">Будівництво та нерухомість</span>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="triangle-icon-context-menu relative w-full md:w-auto pb-4 md:pb-0 border-b-2 md:border-none">
+                                <input type="checkbox" id="events-toggle" class="peer hidden" />
+                                <label for="events-toggle" id="events-menu-button" role="button" aria-haspopup="true"
+                                    class="block relative w-full hover:text-colored cursor-pointer">
+                                    <span class="text-custom-20px pr-6">Життєва подія</span>
+                                    <svg
+                                  class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                                  width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true">
+                                  <path d="M0 0h10L5 6z"></path>
+                                </svg>
+                                </label>
+                                <div class="md:absolute md:left-0 mt-2 md:w-64 md:bg-white md:border md:border-gray-100 md:rounded-lg md:shadow-md hidden peer-checked:block z-10"
+                                    role="menu" aria-labelledby="events-menu-button">
+                                    <fieldset class="p-2" role="group" aria-label="Життєва подія">
+                                        <legend class="sr-only">Життєва подія</legend>
+                                        <label
+                                            class="flex flex-row-reverse md:flex-row w-full justify-between md:justify-start items-center gap-2 px-4 py-2 hover:bg-colored md:hover:bg-gray-100 md:rounded cursor-pointer">
+                                            <input type="checkbox" name="events" value="2023" class="w-4 h-4">
+                                            <span class="text-[16px]/[24px]">Використання землі та екологічна безпека</span>
+                                        </label>
+                                        <label
+                                            class="flex flex-row-reverse md:flex-row w-full justify-between md:justify-start items-center gap-2 px-4 py-2 hover:bg-colored md:hover:bg-gray-100 md:rounded cursor-pointer">
+                                            <input type="checkbox" name="events" value="2024" class="w-4 h-4">
+                                            <span class="text-[16px]/[24px]">Воєнний стан</span>
+                                        </label>
+                                        <label
+                                            class="flex flex-row-reverse md:flex-row w-full justify-between md:justify-start items-center gap-2 px-4 py-2 hover:bg-colored md:hover:bg-gray-100 md:rounded cursor-pointer">
+                                            <input type="checkbox" name="events" value="2025" class="w-4 h-4">
+                                            <span class="text-[16px]/[24px]">Використання землі та екологічна безпека</span>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="relative w-full border-b-2 pb-4 md:w-auto md:border-b-0 md:pb-0">
+                                <select class="appearance-none cursor-pointer w-full pr-6 text-custom-20px focus:outline-none">
+                                    <option selected>Можливість податися онлайн</option>
+                                    <option>Так</option>
+                                    <option>Ні</option>
+                                </select>
+                                <svg
+                                  class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                                  width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                                  aria-hidden="true">
+                                  <path d="M0 0h10L5 6z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <button class="md:hidden button-black text-regular cursor-pointer mt-4 w-full px-10"
+                            type="submit">Шукати</button>
+                    </div>
+                </form>
+                <!--<form action="">
+                    <div class="flex justify-between items-center mb-8">
+                        <div class="relative w-md lg:w-lg">
+                            <input class="px-4 py-2 w-full bg-white border-2 rounded-3xl text-base" name="search" type="text"
+                                placeholder="Назва послуги">
+                            <img class="absolute bottom-3 right-3 w-5 h-5" src="/img/material-design/search.svg" alt="">
+                        </div>
+                        <button class="hidden md:block button-black cursor-pointer font-light px-10" type="submit">Застосувати</button>
+                    </div>
+                    <div class="flex flex-wrap gap-8">
+                        <div class="relative">
+                            <select class="appearance-none cursor-pointer pr-6 text-regular focus:outline-none">
+                                <option disabled selected>Категорія послуги</option>
+                                <option>Категорія 1</option>
+                                <option>Категорія 2</option>
+                                <option>Категорія 3</option>
+                                <option>Категорія 4</option>
+                            </select>
+                            <svg
+                              class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                              width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true">
+                              <path d="M0 0h10L5 6z"></path>
+                            </svg>
+                        </div>
+                        <div class="relative">
+                            <select class="appearance-none cursor-pointer pr-6 text-regular focus:outline-none">
+                                <option disabled selected>Тематична область</option>
+                                <option>Категорія 1</option>
+                                <option>Категорія 2</option>
+                                <option>Категорія 3</option>
+                                <option>Категорія 4</option>
+                            </select>
+                            <svg
+                              class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                              width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true">
+                              <path d="M0 0h10L5 6z"></path>
+                            </svg>
+                        </div>
+                        <div class="relative">
+                            <select class="appearance-none cursor-pointer pr-6 text-regular focus:outline-none">
+                                <option disabled selected>Життєва подія</option>
+                                <option>Категорія 1</option>
+                                <option>Категорія 2</option>
+                                <option>Категорія 3</option>
+                                <option>Категорія 4</option>
+                            </select>
+                            <svg
+                              class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                              width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true">
+                              <path d="M0 0h10L5 6z"></path>
+                            </svg>
+                        </div>
+                        <div class="relative">
+                            <select class="appearance-none cursor-pointer pr-6 text-regular focus:outline-none">
+                                <option disabled selected>Можливість податися онлайн</option>
+                                <option>Категорія 1</option>
+                                <option>Категорія 2</option>
+                                <option>Категорія 3</option>
+                                <option>Категорія 4</option>
+                            </select>
+                            <svg
+                              class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-4 w-4"
+                              width="16" height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                              aria-hidden="true">
+                              <path d="M0 0h10L5 6z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="block md:hidden button-black w-full cursor-pointer font-light px-10 mt-8" type="submit">Застосувати</button>
+                </form>-->
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <h2 class="text-biggest truncate max-w-full md:max-w-3/4 mb-4">Реєстрація народження дитини дитини дитини</h2>
+            <p class="text-[#707070] text-regular font-light mb-8">За вашим запитом знайдено матеріалів: 6</p>
+            <div class="cursor-pointer flex flex-col w-full md:w-3/4">
+                <a href="" class="relative hover:bg-colored border-2 border-gray-200 rounded-2xl pl-4 pr-16 py-3 my-3">
+                    <p class="text-small mb-4"><span class="font-bold">життєва подія: </span>сімейні відносини, народження дитини</p>
+                    <p class="text-regular">Реєстрація народження дитини</p>
+                    <img class="absolute top-1/2 -translate-y-1/2 right-4 w-8 h-8" src="/img/material-design/arrow.svg" alt="">
+                </a>
+                <a href="" class="relative hover:bg-colored border-2 border-gray-200 rounded-2xl pl-4 pr-16 py-3 my-3">
+                    <p class="text-small mb-4"><span class="font-bold">життєва подія: </span>сімейні відносини, народження дитини</p>
+                    <p class="text-regular">Надання відомостей з Державного земельного кадастру у формі довідок, що містять узагальнену інформацію про землі (території)</p>
+                    <img class="absolute top-1/2 -translate-y-1/2 right-4 w-8 h-8" src="/img/material-design/arrow.svg" alt="">
+                </a>
+                <a href="" class="relative hover:bg-colored border-2 border-gray-200 rounded-2xl pl-4 pr-16 py-3 my-3">
+                    <p class="text-small mb-4"><span class="font-bold">життєва подія: </span>сімейні відносини, народження дитини</p>
+                    <p class="text-regular">Надання відомостей з Державного земельного кадастру у формі довідок, що містять узагальнену інформацію про землі (території)</p>
+                    <img class="absolute top-1/2 -translate-y-1/2 right-4 w-8 h-8" src="/img/material-design/arrow.svg" alt="">
+                </a>
+                <a href="" class="relative hover:bg-colored border-2 border-gray-200 rounded-2xl pl-4 pr-16 py-3 my-3">
+                    <p class="text-small mb-4"><span class="font-bold">життєва подія: </span>сімейні відносини, народження дитини</p>
+                    <p class="text-regular">Надання відомостей з Державного земельного кадастру у формі довідок, що містять узагальнену інформацію про землі (території)</p>
+                    <img class="absolute top-1/2 -translate-y-1/2 right-4 w-8 h-8" src="/img/material-design/arrow.svg" alt="">
+                </a>
+                <a href="" class="relative hover:bg-colored border-2 border-gray-200 rounded-2xl pl-4 pr-16 py-3 my-3">
+                    <p class="text-small mb-4"><span class="font-bold">життєва подія: </span>сімейні відносини, народження дитини</p>
+                    <p class="text-regular">Надання відомостей з Державного земельного кадастру у формі довідок, що містять узагальнену інформацію про землі (території)</p>
+                    <img class="absolute top-1/2 -translate-y-1/2 right-4 w-8 h-8" src="/img/material-design/arrow.svg" alt="">
+                </a>
+                <a href="" class="relative hover:bg-colored border-2 border-gray-200 rounded-2xl pl-4 pr-16 py-3 my-3">
+                    <p class="text-small mb-4"><span class="font-bold">життєва подія: </span>сімейні відносини, народження дитини</p>
+                    <p class="text-regular">Встановлення статусу члена сім’ї загиблого (померлого) ветерана війни та члена сім’ї загиблого (померлого) Захисника чи Захисниці України, видача посвідчення/довідки, продовження строку дії посвідчення (вклеювання бланка-вкладки)</p>
+                    <img class="absolute top-1/2 -translate-y-1/2 right-4 w-8 h-8" src="/img/material-design/arrow.svg" alt="">
+                </a>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="module" src="/js/main.js"></script>
+
+</html>
