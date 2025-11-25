@@ -75,6 +75,12 @@ export function initAccessibilityDialog() {
         dialog.querySelector("#scale-value").innerHTML = zoomSteps[currentZoomIndex] / 100 + 'x'
     }
 
+    if (document.cookie.split('; ').find(row => row.startsWith('underscore-links'))) {
+        document.querySelector('body').classList.add('underscore-links')
+        dialog.querySelector('.underscore-links').querySelector(".checkmark").classList.add("visible")
+        dialog.querySelector('.underscore-links').querySelector(".checkmark").classList.remove("invisible")
+    }
+
     document.querySelector('#accessibility-button-open')?.addEventListener('click', () => {
         dialog.showModal();
     });
@@ -82,16 +88,17 @@ export function initAccessibilityDialog() {
         dialog.close();
     });
 
-    dialog.querySelector('.color-enable').addEventListener('click', () => {
+    dialog.querySelector('.color-enable')?.addEventListener('click', () => {
         document.querySelector("body").classList.remove("color-style-contrast")
         document.cookie = "enable-contrast=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     })
-    dialog.querySelector('.color-disable').addEventListener('click', () => {
+    dialog.querySelector('.color-disable')?.addEventListener('click', () => {
         document.querySelector("body").classList.add("color-style-contrast")
         document.cookie = "enable-contrast=true; path=/;";
     })
 
-    dialog.querySelector('.scale-up').addEventListener('click', () => {
+
+    dialog.querySelector('.scale-up')?.addEventListener('click', () => {
         document.querySelector("body").classList.remove(`zoom-${zoomSteps[currentZoomIndex]}`)
         currentZoomIndex = Math.min(currentZoomIndex + 1, zoomSteps.length - 1)
         document.querySelector("body").classList.add(`zoom-${zoomSteps[currentZoomIndex]}`)
@@ -99,12 +106,26 @@ export function initAccessibilityDialog() {
         dialog.querySelector("#scale-value").innerHTML = zoomSteps[currentZoomIndex] / 100 + 'x'
     })
 
-    dialog.querySelector('.scale-down').addEventListener('click', () => {
+    dialog.querySelector('.scale-down')?.addEventListener('click', () => {
         document.querySelector("body").classList.remove(`zoom-${zoomSteps[currentZoomIndex]}`)
         currentZoomIndex = Math.max(currentZoomIndex - 1, 0)
         document.querySelector("body").classList.add(`zoom-${zoomSteps[currentZoomIndex]}`)
         document.cookie = `zoom=${currentZoomIndex}; path=/;`;
         dialog.querySelector("#scale-value").innerHTML = zoomSteps[currentZoomIndex] / 100 + 'x'
+    })
+
+    dialog.querySelector('.underscore-links')?.addEventListener('click', () => {
+        if (document.querySelector("body").classList.contains("underscore-links")) {
+            document.querySelector("body").classList.remove("underscore-links")
+            dialog.querySelector('.underscore-links').querySelector(".checkmark").classList.remove("visible")
+            dialog.querySelector('.underscore-links').querySelector(".checkmark").classList.add("invisible")
+            document.cookie = "underscore-links=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        } else {
+            document.querySelector("body").classList.add("underscore-links")
+            dialog.querySelector('.underscore-links').querySelector(".checkmark").classList.add("visible")
+            dialog.querySelector('.underscore-links').querySelector(".checkmark").classList.remove("invisible")
+            document.cookie = "underscore-links=true; path=/;";
+        }  
     })
 }
 
