@@ -24,7 +24,7 @@ export function initAccordionMenu() {
         if (!openButton) continue;
 
         openButton.addEventListener("click", () => {
-            if (window.innerWidth >= 768) return;
+            if (window.innerWidth >= 768 && openButton.classList.contains("accordion-mobile-only")) return;
 
             const isOpen = openButton.classList.contains("open");
             if (isOpen) {
