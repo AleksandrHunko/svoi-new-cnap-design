@@ -29,7 +29,10 @@ export function initAccordionMenu() {
             const isOpen = openButton.classList.contains("open");
             if (isOpen) {
                 openButton.classList.remove("open");
-                accordion.style.maxHeight = "28px";
+                const accordionStyle = getComputedStyle(accordion);
+                const paddingTop = parseFloat(accordionStyle.paddingTop);
+                const paddingBottom = parseFloat(accordionStyle.paddingBottom);
+                accordion.style.maxHeight = (openButton.offsetHeight + paddingTop + paddingBottom) + "px"
                 accordion.style.overflowY = "hidden";
             } else {
                 openButton.classList.add("open");
