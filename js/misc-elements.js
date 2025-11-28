@@ -23,6 +23,22 @@ export function initAccordionMenu() {
         const openButton = accordion.querySelector(".click-open");
         if (!openButton) continue;
 
+        // close accordions that aren't open by default
+        const isOpen = openButton.classList.contains("open");
+        if (!isOpen) {
+            accordion.classList.remove('transition-[max-height]')
+            accordion.classList.remove('duration-300')
+            const accordionStyle = getComputedStyle(accordion);
+            const paddingTop = parseFloat(accordionStyle.paddingTop);
+            const paddingBottom = parseFloat(accordionStyle.paddingBottom);
+            accordion.style.maxHeight = (openButton.offsetHeight + paddingTop + paddingBottom) + "px"
+            accordion.style.overflowY = "hidden";
+            setTimeout(() => {
+                accordion.classList.add('transition-[max-height]')
+                accordion.classList.add('duration-300')
+            }, 500)
+        }
+
         openButton.addEventListener("click", () => {
             if (window.innerWidth >= 768 && openButton.classList.contains("accordion-mobile-only")) return;
 
@@ -34,10 +50,13 @@ export function initAccordionMenu() {
                 const paddingBottom = parseFloat(accordionStyle.paddingBottom);
                 accordion.style.maxHeight = (openButton.offsetHeight + paddingTop + paddingBottom) + "px"
                 accordion.style.overflowY = "hidden";
+                if (accordion.classList.contains("colored-80-on-open")) accordion.classList.remove("bg-colored-80")
+                if (accordion.classList.contains("colored-80-on-open")) accordion.classList.add("border-2")
             } else {
                 openButton.classList.add("open");
                 accordion.style.maxHeight = accordion.scrollHeight + "px";
-                setTimeout(() => accordion.style.overflowY = "visible", 300);
+                if (accordion.classList.contains("colored-80-on-open")) accordion.classList.add("bg-colored-80")
+                    if (accordion.classList.contains("colored-80-on-open")) accordion.classList.remove("border-2")
             }
         });
     }
