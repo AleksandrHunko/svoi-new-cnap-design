@@ -5,7 +5,7 @@ export function filterMenuInit() {
 }
 
 function initClearButton() {
-    const form = document.querySelector("form")
+    const form = document.querySelector(".filter-form")
     if (!form) return
     const clearButton = form.querySelector(".button-filter-clear")
     if (!clearButton) return
@@ -20,7 +20,7 @@ function initClearButton() {
 }
 
 function changeIconOnOpen() {
-    const form = document.querySelector("form")
+    const form = document.querySelector(".filter-form")
     if (!form) return
     const filterToggle = form.querySelector("#filter-toggle")
     if (!filterToggle) return
@@ -45,7 +45,7 @@ function changeIconOnOpen() {
 }
 
 function addTagStyling() {
-    const form = document.querySelector("form")
+    const form = document.querySelector(".filter-form")
     if (!form) return
 
     const labelsToStyle = form.querySelectorAll(".label-tag")
