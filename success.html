@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+</head>
+
+<body class="w-full color-style-3">
+    <main>
+        <div class="flex gap-2 mt-5 px-4 lg:px-[6%] xl:px-[8%] 2xl:px-[10%]">
+            <a class="hover:text-colored text-small text-[#959595] font-normal" href="/">Головна</a>
+            <svg class="w-2 h-4 shrink-0" class="cursor-pointer" fill="#959595" width="18" height="29"
+                viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+            </svg>
+            <a class="hover:text-colored text-small text-[#959595] font-normal" href="/queue">Е-Черга</a>
+            <svg class="w-2 h-4 shrink-0" class="cursor-pointer" fill="#959595" width="18" height="29"
+                viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+            </svg>
+            <p class="text-small font-normal">Реєстрація</p>
+        </div>
+        <section class="section-wrapper">
+            <h1 class="text-biggest mb-10 md:mb-16">Підтвердження реєстрації в чергу</h1>
+            <div class="flex flex-col bg-colored w-full md:w-2/3 mx-auto px-8 sm:px-12 py-6 sm:py-10 rounded-3xl">
+                <img class="w-11 h-11 mx-auto mb-4" src="/img/green-checkmark.svg" alt="">
+                <h2 class="text-big mb-8 text-center">Майже все!</h2>
+                <p class="text-regular font-light text-center">Для успішного завершення реєстрації в чергу перейдіть за QR-кодом або посиланням нижче (у Viber натисніть "Старт" в чаті, що відкриється):</p>
+                <div class="flex flex-col sm:flex-row gap-8 justify-center mt-10">
+                        <a id="viber-link" target="_blank" href="{{ $confirmationLinkViber }}">
+                            <img class="aspect-square w-full h-auto" src="/img/qr-sample.png" />
+                            <p class="button-transparent mt-4 w-2/3 mx-auto text-center">Вайбер</p>
+                        </a>
+                        <a id="telegram-link" target="_blank" href="{{ $confirmationLinkTelegram}}">
+                            <img class="aspect-square w-full h-auto" src="/img/qr-sample.png" />
+                            <p class="button-transparent mt-4 w-2/3 mx-auto text-center">Telegram</p>
+                        </a>
+                </div>
+                <h3 class="text-medium mt-10 mb-4">Не працює посилання?</h3> 
+                <p class="text-regular font-extralight">
+                    Введіть код підтвердження реєстрації <span class="bg-colored-80 font-medium">{{ $code }}</span> в чат-боті СВОЇ в розділі «Код авторизації».
+                </p>
+
+                <a class="button-black mx-auto my-8 px-12" href="/">На головну</a>
+
+            </div>
+            
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const ut = urlParams.get('ut') || null;
+            const code = urlParams.get('code')
+
+            
+            if (ut) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://toolkit.in.ua/queue-api/submit-token", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+    
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        document.querySelector(".section-wrapper").querySelector(".bg-colored").innerHTML = 
+                        `<img class="w-11 h-11 mx-auto mb-4" src="/img/green-checkmark.svg" alt="">
+                         <h2 class="text-big mb-8 text-center">Реєстрація успішна!</h2>
+                         <p class="text-regular font-light mb-4 text-center">Ви успішно зареєструвалися в черзі. Ви можете закрити це вікно та повернутися до чат-бота.</p>
+                         <p class="text-regular font-light text-center">У чат-боті СВОЇ доступні деталі вашої реєстрації.</p>`
+                    }
+                };
+    
+                xhr.send(JSON.stringify({ token: ut, code:  code}));
+            }
+        });
+    </script>
+    </main>
+</body>
+<script type="module" src="/js/main.js"></script>
+</html>
