@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+</head>
+
+<body class="w-full color-style-7">
+    <main>
+        <div class="flex gap-2 mt-5 px-4 lg:px-[6%] xl:px-[8%] 2xl:px-[10%]">
+            <a class="hover:text-colored text-small text-[#959595] font-normal" href="/">Головна</a>
+            <svg class="w-2 h-4 shrink-0" class="cursor-pointer" fill="#959595" width="18" height="29"
+                viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+            </svg>
+            <p class="text-small font-normal">Перевірка стану розгляду адміністративної послуги</p>
+        </div>
+        <section class="section-wrapper">
+            <h1 class="text-biggest mb-10">Перевірка стану послуги</h1>
+
+            <div id="vulyk-container"
+                class="flex flex-col bg-colored w-full md:w-2/3 mx-auto px-8 sm:px-12 py-6 sm:py-10 rounded-3xl">
+
+                <form id="vulyk-form" class="flex flex-col">
+                    <h2 class="text-big mb-8">Введіть дані заяви</h2>
+                    <div class="styled-input">
+                        <input name="number" type="text" autocomplete="off" required id="form-vulyk-number">
+                        <label class="input-label" for="form-vulyk-number">
+                            <span class="input-span">Реєстраційний номер</span>
+                        </label>
+                    </div>
+                    <p class="text-regular font-extralight -mt-4 mb-10">Реєстраційний номер - це номер Вашої заяви, який Вам
+                        надає Адміністратор ЦНАПу після реєстрації цієї заяви.</p>
+                    <div class="styled-input">
+                        <input name="pin" autocomplete="off" pattern='\d{4,14}' required id="form-vulyk-pin">
+                        <label class="input-label" for="form-vulyk-pin">
+                            <span class="input-span">ПІН-код</span>
+                        </label>
+                    </div>
+                    <p class="text-regular font-extralight -mt-4 mb-8">ПІН-код - це код, який Ви також отримуєте після
+                        реєстрації Вашої заяви у ЦНАПі</p>
+                    <button id="vulyk-submit" type="submit" class="button-black cursor-pointer">Отримати результат</button>
+                </form>
+
+                <div id="vulyk-loading" class="hidden flex flex-col items-center justify-center py-10">
+                    <div class="w-12 h-12 rounded-full border-4 border-black/20 border-t-black animate-spin"></div>
+                    <p class="text-medium mt-6">Завантаження...</p>
+                </div>
+
+                <div id="vulyk-results-view" class="hidden">
+                    <div id="vulyk-results" class="mt-4"></div>
+                    <a href="/vulyk" id="vulyk-reload" class="block button-black cursor-pointer text-center mt-8 w-full">Перевірити іншу послугу</a>
+                </div>
+            </div>
+        </section>
+        <section class="section-wrapper">
+            <div class="flex justify-between items-end w-full mb-10">
+                <h2 class="text-biggest">Адреси</h2>
+                <a class="button-transparent" href="">Всі адреси</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- До 2 елементів -->
+                <div class="lg:block bg-colored rounded-3xl p-8">
+                    <h3 class="text-big mb-4">Департамент «Центр надання адміністративних послуг у місті Луцьку» Луцької
+                        міської ради</h3>
+                    <p class="text-small pb-8 border-b-2 mb-12">Луцьк, вулиця Лесі Українки, 35</p>
+                    <div class="flex w-full justify-between gap-2 mb-8">
+                        <p class="text-medium">Телефон:</p>
+                        <p class="text-medium">+380332777888</p>
+                    </div>
+                    <div class="flex w-full justify-between items-end gap-2 pb-8 border-b-2 mb-12">
+                        <p class="text-medium">Ел. Пошта:</p>
+                        <p class="text-medium">cnap@lutskrada.gov.ua</p>
+                    </div>
+                    <div class="flex gap-2 justify-between">
+                        <a class="button-transparent" href="">Детальніше</a>
+                        <a class="button-black px-10" href="tel">Зателефонувати</a>
+                    </div>
+                </div>
+                <div class="lg:block bg-colored rounded-3xl p-8">
+                    <h3 class="text-big mb-4">Департамент «Центр надання адміністративних послуг у місті Луцьку» Луцької
+                        міської ради</h3>
+                    <p class="text-small pb-8 border-b-2 mb-12">Луцьк, вулиця Лесі Українки, 35</p>
+                    <div class="flex w-full justify-between gap-2 mb-8">
+                        <p class="text-medium">Телефон:</p>
+                        <p class="text-medium">+380332777888</p>
+                    </div>
+                    <div class="flex w-full justify-between items-end gap-2 pb-8 border-b-2 mb-12">
+                        <p class="text-medium">Ел. Пошта:</p>
+                        <p class="text-medium">cnap@lutskrada.gov.ua</p>
+                    </div>
+                    <div class="flex gap-2 justify-between">
+                        <a class="button-transparent" href="">Детальніше</a>
+                        <a class="button-black px-10" href="tel">Зателефонувати</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script type="module" src="/js/main.js"></script>
+<script type="module" src="/js/vulyk.js"></script>
+
+</html>
