@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/input.css" rel="stylesheet">
+  </head>
+<body class="w-full color-style-4">
+  <main>
+    <div class="flex gap-2 mt-5 px-4 lg:px-[6%] xl:px-[8%] 2xl:px-[10%]">
+      <a class="hover:text-colored text-small text-[#959595] font-normal" href="/">Головна</a>
+      <svg class="w-2 h-4 shrink-0" class="cursor-pointer" fill="#959595" width="18" height="29"
+          viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+      </svg>
+      <a class="hover:text-colored text-small text-[#959595] font-normal" href="/cherga">Е-Черга</a>
+      <svg class="w-2 h-4 shrink-0" class="cursor-pointer" fill="#959595" width="18" height="29"
+          viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M11.1611 14.1775L0 3.01642L2.97751 0L17.1551 14.1775L2.97751 28.3551L0 25.3387L11.1611 14.1775Z" />
+      </svg>
+      <p class="text-small font-normal">Записатися в чергу</p>
+    </div>
+    <section data-queue="667" id="queue" class="section-wrapper">
+      <h1 class="text-biggest mb-10">Записатися в чергу</h1>
+      <div class="flex gap-4 items-center mb-10">
+        <span class="flex items-center justify-center text-big bg-colored-80 w-12 md:w-20 h-12 md:h-20 rounded-[50%]">1</span>
+        <h2 class="text-big">Оберіть послугу</h2>
+      </div>
+      <div class="relative md:ml-24 border-b-2 pb-4 w-full md:w-2/3 mb-8 md:mb-16">
+        <select name="type"
+            class="appearance-none cursor-pointer w-full pr-6 text-custom-20px focus:outline-none"
+            id="queue-type">
+            <option  value="" disabled selected>Оберіть послугу</option>
+        </select>
+        <svg class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4" width="16"
+            height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path d="M0 0h10L5 6z"></path>
+        </svg>
+      </div>
+      
+      <div class="queue-block hidden mb-8 md:mb-16">
+        <div class="flex gap-4 items-center mb-10">
+            <span
+                class="flex items-center justify-center text-big bg-colored-80 w-12 md:w-20 h-12 md:h-20 rounded-[50%]">2</span>
+            <h2 class="text-big">Оберіть день</h2>
+        </div>
+        <div class="weekdays grid grid-cols-7 md:ml-24">
+            <div class="item mr-2">Пн</div>
+            <div class="item mr-2">Вт</div>
+            <div class="item mr-2">Ср</div>
+            <div class="item mr-2">Чт</div>
+            <div class="item mr-2">Пт</div>
+            <div class="item mr-2">Сб</div>
+            <div class="item mr-2">Нд</div>
+        </div>
+        <div class="days-grid grid grid-cols-7 md:ml-24">
+        </div>
+    </div>
+    <div class="queue-schedule hidden mb-8 md:mb-16">
+        <div class="flex gap-4 items-center mb-10">
+            <span
+                class="flex items-center justify-center text-big bg-colored-80 w-12 md:w-20 h-12 md:h-20 rounded-[50%]">3</span>
+            <h2 class="text-big">Оберіть час прийому</h2>
+        </div>
+        <div class="relative md:ml-24 border-b-2 pb-4 w-full md:w-2/3 mb-16">
+            <select id="time-select"
+                class="appearance-none cursor-pointer w-full pr-6 text-custom-20px focus:outline-none"
+                id="queue-type">
+                <option value="" disabled selected>Оберіть час</option>
+            </select>
+            <svg class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4" width="16"
+                height="16" viewBox="0 0 10 6" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path d="M0 0h10L5 6z"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="queue-continue-registration hidden md:ml-24">
+        <h3 class="text-big mb-8">Мій візит</h3>
+        <p class="text-regular mb-4"><span class="font-medium">Послуга: </span><span id="continue-registration-type"></span></p>
+        <p class="text-regular mb-4"><span class="font-medium">Дата: </span><span id="continue-registration-date"></span></p>
+        <p class="text-regular mb-8"><span class="font-medium">Час: </span><span id="continue-registration-time"></span></p>
+        <button id='queue-button' class="button-black py-3 px-16 cursor-pointer">Записатися</button>
+    </div>
+    </section>
+  </main>
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/queue-diia.js"></script>
+</body>
+
+</html>
